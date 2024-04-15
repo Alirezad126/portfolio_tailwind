@@ -80,15 +80,15 @@ const Hero = () => {
       sm:h-[80%]
       lg:max-w-[50%] lg:mt-[unset] ">
         <motion.div
-          className="h-[60%] w-full text-center flex flex-col justify-center gap-[20px]
+          className="h-full w-full text-center flex flex-col justify-center gap-[20px]
            
-        lg:text-left items-[unset] lg:w-4/5 lg:h-full "
+        lg:text-left items-[unset] lg:w-4/5 lg:h-full"
           variants={textVariants}
           initial="initial"
           animate="animate"
         >
-          <motion.h2 variants={textVariants} style={{textShadow:"3px 3px 3px gray", letterSpacing:"10px" }} className="text-[3vh] font-bold sm:text-[4vh] lg:text-[5vh]">Alireza Daneshvar</motion.h2>
-          <motion.h1 variants={textVariants} className="text-[3vh] h-[3em] overflow-ellipsis font-bold sm:text-[5vh] lg:text-[6vh]" >
+          <motion.h2 variants={textVariants} style={{textShadow:"3px 3px 3px gray", letterSpacing:"6px" }} className="text-[4vh] font-bold sm:text-[4vh] lg:text-[5vh]">Alireza Daneshvar</motion.h2>
+          <motion.h1 variants={textVariants} className="text-[5vh] h-[3em] overflow-ellipsis font-bold sm:text-[5vh] lg:text-[6vh]" >
             <div>
               <ReactTyped
                 strings={[
@@ -108,7 +108,7 @@ const Hero = () => {
           sm:flex-row sm:items-center sm:justify-center
           lg:justify-normal">
             <a href="#Projects">
-              <motion.button className="p-[10px] font-normal mr-0 text-sm cursor-pointer border-2 rounded-full  bg-transparent 
+              <motion.button className="heroButtons p-[20px] font-semibold mr-0 text-base cursor-pointer border-2 rounded-full  bg-transparent 
           sm:p-[20px] sm:text-xl z-50" variants={textVariants}>
                 Try My Projects LIVE!
               </motion.button>
@@ -118,14 +118,14 @@ const Hero = () => {
               className="CVButton"
               href="https://drive.google.com/file/d/1Cl0-hcOaX8NxvMPlHXzCNyVqZKiipbUI/view?usp=sharing"
             >
-              <motion.button className="p-[10px] font-normal mr-0 text-sm cursor-pointer border-2 rounded-full  bg-transparent 
+              <motion.button className="heroButtons p-[20px] font-semibold text-base cursor-pointer border-2 rounded-full  bg-transparent 
           sm:p-[20px] sm:text-xl z-50" 
               variants={textVariants}>
                 Download My CV
               </motion.button>
             </a>
             <a href="#Contact">
-              <motion.button className="p-[10px] font-normal mr-0 text-sm cursor-pointer border-2 rounded-full  bg-transparent 
+              <motion.button className="heroButtons p-[20px] font-semibold mr-0 text-base cursor-pointer border-2 rounded-full  bg-transparent 
           sm:p-[20px] sm:text-xl z-50" 
                variants={textVariants}>Contact Me</motion.button>
             </a>
@@ -140,9 +140,9 @@ const Hero = () => {
         </motion.div>
       </div>
 
-      <div className="bottom-0 right-0 top-[unset] absolute w-full h-1/4 
+      <div className="hidden absolute w-full h-1/4 
         sm:w-1/2 sm:left-[30%] sm:bottom-[10%] 
-        md:w-1/2 
+        md:w-1/2 md:block 
         lg:w-1/3 lg:top-40 lg:right-20 lg:left-[unset] z-10 ">
         <motion.img
           variants={textVariants}
@@ -156,7 +156,7 @@ const Hero = () => {
       </div>
 
       <motion.div
-        className="hidden md:block sm:absolute sm:bottom-[-120px] sm:text-[50vh] sm:whitespace-nowrap sm:text-[#ffffff09] sm:w-1/2 sm:font-bold sm:pointer-events-none"  
+        className="hidden md:block absolute bottom-[-120px] text-[50vh] whitespace-nowrap text-[#ffffff09] w-1/2 font-bold pointer-events-none"  
         variants={sliderVariants}
         initial="initial"
         animate="animate"
