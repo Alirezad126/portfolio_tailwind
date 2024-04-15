@@ -1,0 +1,9 @@
+button{
+    box-shadow: 0 0 10px white;
+    &:hover {
+        box-shadow: 0 0 30px lightgray;
+        background-color: lightgray;
+        color: black;
+        border: 2px solid black;
+      }
+}
