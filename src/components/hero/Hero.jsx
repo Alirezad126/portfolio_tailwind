@@ -88,7 +88,7 @@ const Hero = () => {
           animate="animate"
         >
           <motion.h2 variants={textVariants} style={{textShadow:"3px 3px 3px gray", letterSpacing:"6px" }} className="text-[4vh] font-bold sm:text-[4vh] lg:text-[5vh]">Alireza Daneshvar</motion.h2>
-          <motion.h1 variants={textVariants} className="text-[5vh] h-[3em] overflow-ellipsis font-bold sm:text-[5vh] lg:text-[6vh]" >
+          <motion.h1 variants={textVariants} className="text-[4vh] h-[4em] overflow-ellipsis font-bold sm:text-[5vh] lg:text-[6vh]" >
             <div>
               <ReactTyped
                 strings={[
