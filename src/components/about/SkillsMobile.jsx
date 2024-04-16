@@ -21,26 +21,42 @@ import { SiPostgresql } from "react-icons/si";
 import SkillBar from "./SkillBar";
 
 
-const Skills = ({variants , width}) => {
+
+const Skills = ({variants}) => {
     return (
+      
       <motion.div
       variants={variants}
       initial="initial"
       whileInView="animate"
-      className="listContainer"
+      className="flex flex-col justify-between mt-[10px] m-auto gap-[1.5vh]"
     >
+      <motion.div
+          // variants={variants}
+          // initial="initial"
+          // whileInView="animate"
+          className="top-0 left-0 sm:pt-[30px] sm:pb-[30px] pt-[20px] pb-[20px]  font-extrabold text-center"
+        >
+          <h1
+            className="text-orange-400 
+            text-[40px]"
+          >
+            My Skills
+          </h1>
+        </motion.div>
+        
       <motion.div
         initial="initial"
         whileInView="animate"
         whileHover={{ background: "lightgray", color: "black" }}
-        className="box"
+        className="flex flex-col items-center gap-[10px] border-[0.5px] rounded-xl w-5/6 h-1/4 m-auto p-[8px]"
       >
-        <div className="skillTitle">
+        <div className="text-center text-[2.4vh] font-bold" >
           <h2>Programming Languages</h2>
         </div>
-        <div className="skillItems">
-          <SkillBar image={<FaPython />} name={"Python"} />
-          <SkillBar image={<TbBrandCpp />} name={"C++"} />
+        <div className="flex flex-row gap-[4vw] justify-center flex-wrap w-full">
+          <SkillBar image={<FaPython className="w-[9vw] h-[9vw] "/>} name={"Python"} />
+          <SkillBar image={<TbBrandCpp className="w-[9vw] h-[9vw] "/>} name={"C++"} />
           <SkillBar
             image={
               <svg
@@ -48,6 +64,7 @@ const Skills = ({variants , width}) => {
                 width="1em"
                 height="1em"
                 viewBox="0 0 512 512"
+                className="w-[9vw] h-[9vw] "
               >
                 <path
                   fill="currentColor"
@@ -57,7 +74,7 @@ const Skills = ({variants , width}) => {
             }
             name={"MATLAB"}
           />
-          <SkillBar image={<SiGnubash />} name={"Bash"} />
+          <SkillBar image={<SiGnubash className="w-[9vw] h-[9vw] "/>} name={"Bash"} />
         </div>
       </motion.div>
 
@@ -65,17 +82,17 @@ const Skills = ({variants , width}) => {
         initial="initial"
         whileInView="animate"
         whileHover={{ background: "lightgray", color: "black" }}
-        className="box"
+        className="flex flex-col items-center gap-[10px] border-[0.5px] rounded-xl w-5/6 h-1/4 m-auto p-[8px] "
       >
-        <div className="skillTitle">
+        <div className="text-center text-[2.4vh] font-bold">
           <h2>Machine Learning</h2>
         </div>
-        <div className="skillItems">
-          <SkillBar image={<SiPytorch />} name={"PyTorch"} />
-          <SkillBar image={<SiTensorflow />} name={"Tensorflow"} />
-          <SkillBar image={<SiScikitlearn />} name={"Scikit"} />
-          <SkillBar image={<SiOpencv />} name={"OpenCV"} />
-          <SkillBar image={<SiOpenaigym />} name={"Gym"} />
+        <div className="flex flex-row gap-[4vw] justify-center flex-wrap w-full">
+          <SkillBar image={<SiPytorch className="w-[9vw] h-[9vw] "/>} name={"PyTorch"} />
+          <SkillBar image={<SiTensorflow className="w-[9vw] h-[9vw] "/>} name={"Tensorflow"} />
+          <SkillBar image={<SiScikitlearn className="w-[9vw] h-[9vw] "/>} name={"Scikit"} />
+          <SkillBar image={<SiOpencv className="w-[9vw] h-[9vw] "/>} name={"OpenCV"} />
+          <SkillBar image={<SiOpenaigym className="w-[9vw] h-[9vw] "/>} name={"Gym"} />
         </div>
       </motion.div>
 
@@ -83,18 +100,18 @@ const Skills = ({variants , width}) => {
         initial="initial"
         whileInView="animate"
         whileHover={{ background: "lightgray", color: "black" }}
-        className="box"
+        className="flex flex-col items-center gap-[10px] border-[0.5px] rounded-xl w-5/6 h-1/4 m-auto p-[8px] "
       >
-        <div className="skillTitle">
+        <div className="text-center text-[2.4vh] font-bold">
           <h2>MLOps</h2>
         </div>
 
-        <div className="skillItems">
-          <SkillBar image={<SiFlask />} name={"Flask"} />
-          <SkillBar image={<SiFastapi />} name={"FastAPI"} />
-          <SkillBar image={<SiAmazonaws />} name={"AWS"} />
-          <SkillBar image={<SiDocker />} name={"Docker"} />
-          <SkillBar image={<SiMlflow />} name={"MLFlow"} />
+        <div className="flex flex-row gap-[4vw] justify-center flex-wrap w-full">
+          <SkillBar image={<SiFlask className="w-[9vw] h-[9vw] "/>} name={"Flask"} />
+          <SkillBar image={<SiFastapi className="w-[9vw] h-[9vw] "/>} name={"FastAPI"} />
+          <SkillBar image={<SiAmazonaws className="w-[9vw] h-[9vw] "/>} name={"AWS"} />
+          <SkillBar image={<SiDocker className="w-[9vw] h-[9vw] "/>} name={"Docker"} />
+          <SkillBar image={<SiMlflow className="w-[9vw] h-[9vw] "/>} name={"MLFlow"} />
         </div>
       </motion.div>
 
@@ -102,18 +119,18 @@ const Skills = ({variants , width}) => {
         initial="initial"
         whileInView="animate"
         whileHover={{ background: "lightgray", color: "black" }}
-        className="box"
+        className="flex flex-col items-center gap-[10px] border-[0.5px] rounded-xl w-5/6 h-1/4 m-auto p-[8px] "
       >
-        <div className="skillTitle">
+        <div className="text-center text-[2.4vh] font-bold">
           <h2>Web Development</h2>
         </div>
-        <div className="skillItems">
-          <SkillBar image={<RiReactjsFill />} name={"React"} />
-          <SkillBar image={<SiJavascript />} name={"JavaScript"} />
-          <SkillBar image={<FaHtml5 />} name={"HTML"} />
-          <SkillBar image={<FaSass />} name={"Sass"} />
-          <SkillBar image={<FaBootstrap />} name={"Bootstrap"} />
-          <SkillBar image={<SiPostgresql />} name={"PostgreSQL"} />
+        <div className="flex flex-row gap-[4vw] justify-center flex-wrap w-full ">
+          <SkillBar image={<RiReactjsFill className="w-[9vw] h-[9vw] "/>} name={"React"} />
+          <SkillBar image={<SiJavascript className="w-[9vw] h-[9vw] "/>} name={"JavaScript"} />
+          <SkillBar image={<FaHtml5 className="w-[9vw] h-[9vw] "/>} name={"HTML"} />
+          <SkillBar image={<FaSass className="w-[9vw] h-[9vw] "/>} name={"Sass"} />
+          <SkillBar image={<FaBootstrap className="w-[9vw] h-[9vw] "/>} name={"Bootstrap"} />
+          <SkillBar image={<SiPostgresql className="w-[9vw] h-[9vw]"/>} name={"PostgreSQL"} />
         </div>
       </motion.div>
     </motion.div>

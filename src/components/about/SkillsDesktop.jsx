@@ -28,20 +28,20 @@ const Skills = ({variants}) => {
       variants={variants}
       initial="initial"
       whileInView="animate"
-      className="hidden lg:flex pt-[30px] pb-[30px] justify-between"
+      className="hidden sm:flex lg:pt-[30px] lg:pb-[30px] md:pt-[10px] lg:pb-[10px] justify-between"
     >
       <motion.div
         initial="initial"
         whileInView="animate"
         whileHover={{ background: "lightgray", color: "black" }}
-        className="flex flex-col items-center gap-[10px] border-[0.5px] rounded-xl w-1/5 h-full p-[20px] mb-[10px] "
+        className="flex flex-col items-center gap-[10px] border-[0.5px] rounded-xl w-1/5 lg:h-full h-4/5 lg:p-[20px] p-[10px] mb-[10px] "
       >
-        <div className="mb-10px text-[1vw]" >
+        <div className="lg:mb-10px md:text-center md:text-[15px] lg:text-[20px]" >
           <h2>Programming Languages</h2>
         </div>
-        <div className="flex gap-[1vw] flex-wrap justify-center">
-          <SkillBar image={<FaPython className="w-[45px] h-[45px]"/>} name={"Python"} />
-          <SkillBar image={<TbBrandCpp className="w-[45px] h-[45px]"/>} name={"C++"} />
+        <div className="flex sm:flex-col lg:flex-row lg:gap-[20px] lg:h-[unset] lg:justify-center gap-[5px] flex-wrap h-3/4 w-full">
+          <SkillBar image={<FaPython className="lg:w-[45px] lg:h-[45px]  md:w-[30px] md:h-[30px]  sm:w-[30px] sm:h-[30px]"/>} name={"Python"} />
+          <SkillBar image={<TbBrandCpp className="lg:w-[45px] lg:h-[45px]  md:w-[30px] md:h-[30px]  sm:w-[30px] sm:h-[30px]"/>} name={"C++"} />
           <SkillBar
             image={
               <svg
@@ -49,7 +49,7 @@ const Skills = ({variants}) => {
                 width="1em"
                 height="1em"
                 viewBox="0 0 512 512"
-                className="w-[45px] h-[45px]"
+                className="lg:w-[45px] lg:h-[45px]  md:w-[30px] md:h-[30px]  sm:w-[30px] sm:h-[30px]"
               >
                 <path
                   fill="currentColor"
@@ -59,7 +59,7 @@ const Skills = ({variants}) => {
             }
             name={"MATLAB"}
           />
-          <SkillBar image={<SiGnubash className="w-[45px] h-[45px]"/>} name={"Bash"} />
+          <SkillBar image={<SiGnubash className="lg:w-[45px] lg:h-[45px]  md:w-[30px] md:h-[30px]  sm:w-[30px] sm:h-[30px]"/>} name={"Bash"} />
         </div>
       </motion.div>
 
@@ -67,17 +67,17 @@ const Skills = ({variants}) => {
         initial="initial"
         whileInView="animate"
         whileHover={{ background: "lightgray", color: "black" }}
-        className="flex flex-col items-center gap-[10px] border-[0.5px] rounded-xl w-1/5 h-full p-[20px] mb-[10px] "
+        className="flex flex-col items-center gap-[10px] border-[0.5px] rounded-xl w-1/5 lg:h-full h-4/5 lg:p-[20px] p-[10px] mb-[10px] "
       >
-        <div className="mb-10px text-[1vw]">
+        <div className="lg:mb-10px md:text-center md:text-[15px] lg:text-[20px]">
           <h2>Machine Learning</h2>
         </div>
-        <div className="flex gap-[1vw] flex-wrap justify-center">
-          <SkillBar image={<SiPytorch className="w-[45px] h-[45px]"/>} name={"PyTorch"} />
-          <SkillBar image={<SiTensorflow className="w-[45px] h-[45px]"/>} name={"Tensorflow"} />
-          <SkillBar image={<SiScikitlearn className="w-[45px] h-[45px]"/>} name={"Scikit"} />
-          <SkillBar image={<SiOpencv className="w-[45px] h-[45px]"/>} name={"OpenCV"} />
-          <SkillBar image={<SiOpenaigym className="w-[45px] h-[45px]"/>} name={"Gym"} />
+        <div className="flex sm:flex-col lg:flex-row lg:gap-[20px] lg:h-[unset] lg:justify-center gap-[5px] flex-wrap h-3/4 w-full">
+          <SkillBar image={<SiPytorch className="lg:w-[45px] lg:h-[45px]  md:w-[30px] md:h-[30px]  sm:w-[30px] sm:h-[30px]"/>} name={"PyTorch"} />
+          <SkillBar image={<SiTensorflow className="lg:w-[45px] lg:h-[45px]  md:w-[30px] md:h-[30px]  sm:w-[30px] sm:h-[30px]"/>} name={"Tensorflow"} />
+          <SkillBar image={<SiScikitlearn className="lg:w-[45px] lg:h-[45px]  md:w-[30px] md:h-[30px]  sm:w-[30px] sm:h-[30px]"/>} name={"Scikit"} />
+          <SkillBar image={<SiOpencv className="lg:w-[45px] lg:h-[45px]  md:w-[30px] md:h-[30px]  sm:w-[30px] sm:h-[30px]"/>} name={"OpenCV"} />
+          <SkillBar image={<SiOpenaigym className="lg:w-[45px] lg:h-[45px]  md:w-[30px] md:h-[30px]  sm:w-[30px] sm:h-[30px]"/>} name={"Gym"} />
         </div>
       </motion.div>
 
@@ -85,18 +85,18 @@ const Skills = ({variants}) => {
         initial="initial"
         whileInView="animate"
         whileHover={{ background: "lightgray", color: "black" }}
-        className="flex flex-col items-center gap-[10px] border-[0.5px] rounded-xl w-1/5 h-full p-[20px] mb-[10px] "
+        className="flex flex-col items-center gap-[10px] border-[0.5px] rounded-xl w-1/5 lg:h-full h-4/5 lg:p-[20px] p-[10px] mb-[10px] "
       >
-        <div className="mb-10px text-[1vw]">
+        <div className="lg:mb-10px md:text-center md:text-[15px] lg:text-[20px]">
           <h2>MLOps</h2>
         </div>
 
-        <div className="flex gap-[1vw] flex-wrap justify-center">
-          <SkillBar image={<SiFlask className="w-[45px] h-[45px]"/>} name={"Flask"} />
-          <SkillBar image={<SiFastapi className="w-[45px] h-[45px]"/>} name={"FastAPI"} />
-          <SkillBar image={<SiAmazonaws className="w-[45px] h-[45px]"/>} name={"AWS"} />
-          <SkillBar image={<SiDocker className="w-[45px] h-[45px]"/>} name={"Docker"} />
-          <SkillBar image={<SiMlflow className="w-[45px] h-[45px]"/>} name={"MLFlow"} />
+        <div className="flex sm:flex-col lg:flex-row lg:gap-[20px] lg:h-[unset] lg:justify-center gap-[5px] flex-wrap h-3/4 w-full">
+          <SkillBar image={<SiFlask className="lg:w-[45px] lg:h-[45px]  md:w-[30px] md:h-[30px]  sm:w-[30px] sm:h-[30px]"/>} name={"Flask"} />
+          <SkillBar image={<SiFastapi className="lg:w-[45px] lg:h-[45px]  md:w-[30px] md:h-[30px]  sm:w-[30px] sm:h-[30px]"/>} name={"FastAPI"} />
+          <SkillBar image={<SiAmazonaws className="lg:w-[45px] lg:h-[45px]  md:w-[30px] md:h-[30px]  sm:w-[30px] sm:h-[30px]"/>} name={"AWS"} />
+          <SkillBar image={<SiDocker className="lg:w-[45px] lg:h-[45px]  md:w-[30px] md:h-[30px]  sm:w-[30px] sm:h-[30px]"/>} name={"Docker"} />
+          <SkillBar image={<SiMlflow className="lg:w-[45px] lg:h-[45px]  md:w-[30px] md:h-[30px]  sm:w-[30px] sm:h-[30px]"/>} name={"MLFlow"} />
         </div>
       </motion.div>
 
@@ -104,18 +104,18 @@ const Skills = ({variants}) => {
         initial="initial"
         whileInView="animate"
         whileHover={{ background: "lightgray", color: "black" }}
-        className="flex flex-col items-center gap-[10px] border-[0.5px] rounded-xl w-1/5 h-full p-[20px] mb-[10px] "
+        className="flex flex-col items-center gap-[10px] border-[0.5px] rounded-xl w-1/5 lg:h-full h-4/5 lg:p-[20px] p-[10px] mb-[10px] "
       >
-        <div className="mb-10px text-[1vw]">
+        <div className="lg:mb-10px md:text-center md:text-[15px] lg:text-[20px]">
           <h2>Web Development</h2>
         </div>
-        <div className="flex gap-[1vw] flex-wrap justify-center">
-          <SkillBar image={<RiReactjsFill className="w-[45px] h-[45px]"/>} name={"React"} />
-          <SkillBar image={<SiJavascript className="w-[45px] h-[45px]"/>} name={"JavaScript"} />
-          <SkillBar image={<FaHtml5 className="w-[45px] h-[45px]"/>} name={"HTML"} />
-          <SkillBar image={<FaSass className="w-[45px] h-[45px]"/>} name={"Sass"} />
-          <SkillBar image={<FaBootstrap className="w-[45px] h-[45px]"/>} name={"Bootstrap"} />
-          <SkillBar image={<SiPostgresql className="w-[45px] h-[45px]"/>} name={"PostgreSQL"} />
+        <div className="flex sm:flex-col lg:flex-row lg:gap-[20px] lg:h-[unset] lg:justify-center gap-[5px] flex-wrap h-3/4 w-full  ">
+          <SkillBar image={<RiReactjsFill className="lg:w-[45px] lg:h-[45px]  md:w-[30px] md:h-[30px]  sm:w-[30px] sm:h-[30px]"/>} name={"React"} />
+          <SkillBar image={<SiJavascript className="lg:w-[45px] lg:h-[45px]  md:w-[30px] md:h-[30px]  sm:w-[30px] sm:h-[30px]"/>} name={"JavaScript"} />
+          <SkillBar image={<FaHtml5 className="lg:w-[45px] lg:h-[45px]  md:w-[30px] md:h-[30px]  sm:w-[30px] sm:h-[30px]"/>} name={"HTML"} />
+          <SkillBar image={<FaSass className="lg:w-[45px] lg:h-[45px]  md:w-[30px] md:h-[30px]  sm:w-[30px] sm:h-[30px]"/>} name={"Sass"} />
+          <SkillBar image={<FaBootstrap className="lg:w-[45px] lg:h-[45px]  md:w-[30px] md:h-[30px]  sm:w-[30px] sm:h-[30px]"/>} name={"Bootstrap"} />
+          <SkillBar image={<SiPostgresql className="lg:w-[45px] lg:h-[45px]  md:w-[30px] md:h-[30px]  sm:w-[30px] sm:h-[30px]  sm:w-[30px] sm:h-[30px] "/>} name={"PostgreSQL"} />
         </div>
       </motion.div>
     </motion.div>
