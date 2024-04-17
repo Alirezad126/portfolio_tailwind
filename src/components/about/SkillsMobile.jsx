@@ -29,7 +29,7 @@ const Skills = ({variants}) => {
       variants={variants}
       initial="initial"
       whileInView="animate"
-      className="flex flex-col justify-between mt-[10px] m-auto gap-[1.5vh]"
+      className="flex flex-col justify-between mt-[10px] m-auto gap-[1.5vh] bg-gradient-to-a"
     >
       <motion.div
           // variants={variants}
