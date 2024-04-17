@@ -33,11 +33,11 @@ function Carousel() {
         <p className="text-[1.3vh] text-justify">{slides[currentIndex].text}</p>
       </div>
       {/* Left Arrow */}
-      <div onClick={prevSlide} className="absolute top-[50%] -translate-x-0 translate-y-[-50%] left-0 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+      <div onClick={prevSlide} className="absolute top-[50%] -translate-x-0 translate-y-[-50%] left-0 text-2xl rounded-full p-2 bg-white/20 text-white cursor-pointer">
         <BsChevronCompactLeft size={15} />
       </div>
       {/* Rigth Arrow */}
-      <div onClick={nextSlide} className="absolute top-[50%] -translate-x-0 translate-y-[-50%] right-0 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+      <div onClick={nextSlide} className="absolute top-[50%] -translate-x-0 translate-y-[-50%] right-0 text-2xl rounded-full p-2 bg-white/20 text-white cursor-pointer">
         <BsChevronCompactRight size={15} />
       </div>
     </div>
