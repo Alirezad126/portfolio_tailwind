@@ -28,7 +28,7 @@ const Skills = ({variants}) => {
       variants={variants}
       initial="initial"
       whileInView="animate"
-      className="hidden sm:flex lg:pt-[30px] lg:pb-[30px] md:pt-[10px] lg:pb-[10px] justify-between"
+      className="hidden sm:flex lg:pt-[30px]  md:pt-[10px] lg:pb-[10px] justify-between p-6"
     >
       <motion.div
         initial="initial"

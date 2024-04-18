@@ -18,7 +18,14 @@ const Portfolio = () => {
 
   return (
     <div id="Projects" className="relative bg-gradient-to-a" ref={ref}>
-      <div className="sticky top-0 left:0 pt-[50px] lg:pt-[50px] text-center text-orange-400 md:text-[60px] text-[40px] font-bold ">
+      <div className="sticky top-0 left:0 text-[2rem]
+            pt-5
+            pb-10
+            sm:pb-0
+            md:pb-5
+          sm:text-[2rem]
+          lg:text-[2.5rem]
+          2xl:text-[4rem] text-center text-orange-400 md:text-[60px] font-bold ">
         <h1>Projects</h1>
         <motion.div style={{ scaleX }} className="h-[10px] bg-white"></motion.div>
       </div>

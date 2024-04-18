@@ -12,14 +12,16 @@ const item = {
 const ProjectOne = () => {
   const [showResults, setShowResults] = useState(false);
   const handleResults = () => {
-    setShowResults(!showResults);
+    if (showResults === false){
+      setShowResults(true)
+    }
   };
 
   return (
     <section>
       <div className="flex justify-center items-center w-full h-full">
-        <div className="w-4/5 h-full m-auto flex gap-[7vw] items-center">
-          <div className="flex flex-col gap-3 h-3/4 w-2/3 p-[30px] justify-center items-center">
+        <div className="w-4/5 h-full m-auto flex gap-[2vw] items-center">
+          <div className="flex flex-col gap-3 h-4/5 w-2/3 justify-center items-center">
             <div className="w-full h-1/3 flex justify-center">
               <img
                 className="h-full w-3/5 rounded-xl object-fit "
@@ -56,8 +58,7 @@ const ProjectOne = () => {
             <div className="h-1/6 pt-10 text-center">
               <button
                 onClick={handleResults}
-                className="heroButtons p-[20px] font-semibold text-base cursor-pointer border-2 rounded-full  bg-transparent 
-          sm:p-[20px] sm:text-xl z-50"
+                className=" text-white p-[2vh] lg:p-[20px] border-none rounded-xl bg-orange-600 cursor-pointer font-medium"
               >
                 {" "}
                 Click Me!

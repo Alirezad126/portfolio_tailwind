@@ -55,18 +55,18 @@ const About = () => {
           // variants={variants}
           // initial="initial"
           // whileInView="animate"
-          className="flex flex-col 
+          className="flex flex-col
           gap-[1vh]
           lg:flex-row lg:justify-around lg:gap-[10px] lg:m-0 z-10 rounded-32xl lg:border-[1px] lg:h-1/2 "
         >
           <div
-            className="flex flex-col 
-            gap-[1vh]
+            className="flex flex-col p-2
+            gap-[2vh]
           md:gap-[10px] md:p-[10px] w-full 
           lg:w-1/2 lg:gap-[20px] lg:p-[10px]"
           >
             <h1
-              className="items-center text-[2.5vh]  
+              className="items-center text-[2.3vh]  
             lg:text-[1.5rem] 2xl:text-[2rem] font-extrabold"
             >
               <b> Education </b>
@@ -83,14 +83,14 @@ const About = () => {
               />
               <div className="flex flex-col w-[70%]">
                 <h2
-                  className="text-[2vh] md:text-[0.9rem] lg:text-[1rem] 2xl:text-[1.5rem]"
+                  className="text-[1.8vh] md:text-[0.9rem] lg:text-[1rem] 2xl:text-[1.5rem]"
                 >
                   <b>M.Sc.</b> Building Engineering
                 </h2>
-                <h3 className="text-[2vh] md:text-[0.9rem] lg:text-[1rem] 2xl:text-[1.5rem]">
+                <h3 className="text-[1.8vh] md:text-[0.9rem] lg:text-[1rem] 2xl:text-[1.5rem]">
                   Concordia University
                 </h3>
-                <p className="text-[1.4vh] sm:text-[12px] 2xl:text-[15px]  font-light">
+                <p className="text-[1.3vh] sm:text-[12px] 2xl:text-[15px]  font-light">
                   GPA 4.1/4.3
                 </p>
               </div>
@@ -111,14 +111,14 @@ const About = () => {
               />
               <div className="flex flex-col w-[70%]">
                 <h2
-                  className="text-[2vh] md:text-[0.9rem] lg:text-[1rem] 2xl:text-[1.5rem]"
+                  className="text-[1.8vh] md:text-[0.9rem] lg:text-[1rem] 2xl:text-[1.5rem]"
                 >
                   <b>B.Sc.</b> Mechanical Engineering
                 </h2>
-                <h3 className="text-[2vh] md:text-[0.9rem] lg:text-[1rem] 2xl:text-[1.5rem]">
+                <h3 className="text-[1.8vh] md:text-[0.9rem] lg:text-[1rem] 2xl:text-[1.5rem]">
                   Iran University of Science and Technology
                 </h3>
-                <p className="text-[1.4vh] sm:text-[12px] 2xl:text-[15px] font-light">
+                <p className="text-[1.2vh] sm:text-[12px] 2xl:text-[15px] font-light">
                   GPA 17.5/20
                 </p>
               </div>
@@ -129,13 +129,13 @@ const About = () => {
           </div>
 
           <div
-            className="flex flex-col 
-            gap-[1vh]
+            className="flex flex-col p-2
+            gap-[2vh]
           md:gap-[10px] md:p-[10px] w-full 
           lg:w-1/2 lg:gap-[20px] 2xl:p-[15px] lg:p-[10px]"
           >
             <h1
-              className="items-center text-[2.5vh]
+              className="items-center text-[2.3vh]
               lg:text-[1.5rem] 2xl:text-[2rem] font-extrabold "
             >
               <b>Experience</b>
@@ -152,14 +152,14 @@ const About = () => {
               />
               <div className="flex flex-col w-[65%]">
                 <h2
-                  className="text-[2vh] md:text-[0.9rem] lg:text-[1rem] 2xl:text-[1.5rem]"
+                  className="text-[1.8vh] md:text-[0.9rem] lg:text-[1rem] 2xl:text-[1.5rem]"
                 >
                   <b>Machine Learning Researcher</b>
                 </h2>
-                <h3 className="text-[2vh] md:text-[0.9rem] lg:text-[1rem] 2xl:text-[1.5rem]">
+                <h3 className="text-[1.8vh] md:text-[0.9rem] lg:text-[1rem] 2xl:text-[1.5rem]">
                   Concordia University
                 </h3>
-                <p className="text-[2vh] md:text-[0.8rem] 2xl:text-[1.2rem] font-light text-justify text-gray-00">
+                <p className="text-[1.8vh] md:text-[0.8rem] 2xl:text-[1.2rem] font-light text-justify text-gray-00">
                   Developed a novel Safe Deep Reinforcement Learning
                   (SDRL)approach for optimal dispatch of energy hubs to minimize
                   operational cost and satisfy operational constraints.
@@ -181,14 +181,14 @@ const About = () => {
               />
               <div className="flex flex-col w-[65%]">
                 <h2
-                  className="text-[2vh] md:text-[0.9rem] lg:text-[1rem] 2xl:text-[1.5rem]"
+                  className="text-[1.8vh] md:text-[0.9rem] lg:text-[1rem] 2xl:text-[1.5rem]"
                 >
                   <b>Junior Data Scientist</b>
                 </h2>
-                <h3 className="text-[2vh] md:text-[0.9rem] lg:text-[1rem] 2xl:text-[1.5rem]">
+                <h3 className="text-[1.8vh] md:text-[0.9rem] lg:text-[1rem] 2xl:text-[1.5rem]">
                   IranBar
                 </h3>
-                <p className="text-[2vh] md:text-[0.8rem] 2xl:text-[1.2rem] font-light text-justify text-gray-00">
+                <p className="text-[1.8vh] md:text-[0.8rem] 2xl:text-[1.2rem] font-light text-justify text-gray-00">
                   Collaborated with cross-functional teams to train, optimize,
                   and deploy data-driven models for delivery price prediction.
                 </p>
