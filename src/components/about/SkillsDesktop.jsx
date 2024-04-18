@@ -116,7 +116,7 @@ const Skills = ({variants}) => {
           <SkillBar image={<FaHtml5 className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  sm:w-[1.4em] sm:h-[1.4em] xl:w-[3em] xl:h-[3em]"/>} name={"HTML"} />
           <SkillBar image={<FaSass className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  sm:w-[1.4em] sm:h-[1.4em] xl:w-[3em] xl:h-[3em]"/>} name={"Sass"} />
           <SkillBar image={<FaBootstrap className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  sm:w-[1.4em] sm:h-[1.4em] xl:w-[3em] xl:h-[3em]"/>} name={"Bootstrap"} />
-          <SkillBar image={<SiPostgresql className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  sm:w-[1.4em] sm:h-[1.4em] xl:w-[3em] xl:h-[3em]  sm:w-[1.4em] sm:h-[1.4em] "/>} name={"PostgreSQL"} />
+          <SkillBar image={<SiPostgresql className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  xl:w-[3em] xl:h-[3em]  sm:w-[1.4em] sm:h-[1.4em] "/>} name={"PostgreSQL"} />
         </div>
       </motion.div>
     </motion.div>
