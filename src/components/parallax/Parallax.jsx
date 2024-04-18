@@ -38,7 +38,7 @@ const Parallax = ({ type }) => {
       className="w-full h-full relative flex items-center flex-col justify-center overflow-hidden bg-gradient-to-a "
       ref={ref}
     >
-      <motion.h1 style={{y: yText}} className="text-5xl font-bold mb-[10%] text-center md:text-7xl lg:text-9xl z-50">
+      <motion.h1 style={{y: yText}} className="text-5xl font-bold mb-[10%] text-center md:text-4xl lg:text-6xl z-50">
         
         Who Am I ?!
         <br />
