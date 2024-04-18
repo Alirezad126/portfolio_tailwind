@@ -24,7 +24,7 @@ const About = () => {
   return (
     <motion.div className="bg-gradient-to-b h-full flex flex-col items-center">
       <div
-        className="flex flex-col lg:max-w-[1200px] xl:max-w-[80%] justify-center w-full
+        className="flex flex-col lg:max-w-[1200px] 2xl:max-w-[80%] justify-center w-full
         
       sm:gap-[30px]
       md:gap-[1vh]
@@ -39,12 +39,13 @@ const About = () => {
           <h1
             className="text-orange-400 
             text-[2rem]
+            pt-5
             pb-10
             sm:pb-0
             md:pb-5
           sm:text-[2rem]
           lg:text-[2.5rem]
-          xl:text-[4rem] "
+          2xl:text-[4rem] "
           >
             About Me
           </h1>
@@ -56,7 +57,7 @@ const About = () => {
           // whileInView="animate"
           className="flex flex-col 
           gap-[1vh]
-          lg:flex-row lg:justify-around lg:gap-[10px] lg:m-0 z-10 rounded-3xl lg:border-[1px] lg:h-1/2 "
+          lg:flex-row lg:justify-around lg:gap-[10px] lg:m-0 z-10 rounded-32xl lg:border-[1px] lg:h-1/2 "
         >
           <div
             className="flex flex-col 
@@ -65,8 +66,8 @@ const About = () => {
           lg:w-1/2 lg:gap-[20px] lg:p-[10px]"
           >
             <h1
-              className="items-center text-[1rem]  
-            lg:text-[1.5rem] xl:text-[2rem] font-extrabold"
+              className="items-center text-[2.5vh]  
+            lg:text-[1.5rem] 2xl:text-[2rem] font-extrabold"
             >
               <b> Education </b>
             </h1>
@@ -78,22 +79,22 @@ const About = () => {
               <img
                 src="./Concordia.png"
                 alt="Concordia University"
-                className="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] xl:w-[70px] xl:h-[70px]"
+                className="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] 2xl:w-[70px] 2xl:h-[70px]"
               />
               <div className="flex flex-col w-[70%]">
                 <h2
-                  className="text-[0.7rem] md:text-[0.9rem] lg:text-[1rem] xl:text-[1.5rem]"
+                  className="text-[2vh] md:text-[0.9rem] lg:text-[1rem] 2xl:text-[1.5rem]"
                 >
                   <b>M.Sc.</b> Building Engineering
                 </h2>
-                <h3 className="text-[0.7rem] md:text-[0.9rem] lg:text-[1rem] xl:text-[1.5rem]">
+                <h3 className="text-[2vh] md:text-[0.9rem] lg:text-[1rem] 2xl:text-[1.5rem]">
                   Concordia University
                 </h3>
-                <p className="text-[1.4vh] sm:text-[12px] xl:text-[15px]  font-light">
+                <p className="text-[1.4vh] sm:text-[12px] 2xl:text-[15px]  font-light">
                   GPA 4.1/4.3
                 </p>
               </div>
-              <div className="ml-auto text-[0.7rem] xl:text-[1rem]">
+              <div className="ml-auto text-[0.7rem] 2xl:text-[1rem]">
                 (Jan 2021 - Apr 2023)
               </div>
             </motion.div>
@@ -106,22 +107,22 @@ const About = () => {
                 id="IUST"
                 src="./IUST.png"
                 alt="IUST Icon"
-                className="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] xl:w-[70px] xl:h-[70px] bg-white rounded-full"
+                className="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] 2xl:w-[70px] 2xl:h-[70px] bg-white rounded-full"
               />
               <div className="flex flex-col w-[70%]">
                 <h2
-                  className="text-[0.7rem] md:text-[0.9rem] lg:text-[1rem] xl:text-[1.5rem]"
+                  className="text-[2vh] md:text-[0.9rem] lg:text-[1rem] 2xl:text-[1.5rem]"
                 >
                   <b>B.Sc.</b> Mechanical Engineering
                 </h2>
-                <h3 className="text-[0.7rem] md:text-[0.9rem] lg:text-[1rem] xl:text-[1.5rem]">
+                <h3 className="text-[2vh] md:text-[0.9rem] lg:text-[1rem] 2xl:text-[1.5rem]">
                   Iran University of Science and Technology
                 </h3>
-                <p className="text-[1.4vh] sm:text-[12px] xl:text-[15px] font-light">
+                <p className="text-[1.4vh] sm:text-[12px] 2xl:text-[15px] font-light">
                   GPA 17.5/20
                 </p>
               </div>
-              <div className="ml-auto text-[0.7rem] xl:text-[1rem]">
+              <div className="ml-auto text-[0.7rem] 2xl:text-[1rem]">
                 (Sep 2016 - Aug 2020)
               </div>
             </motion.div>
@@ -131,11 +132,11 @@ const About = () => {
             className="flex flex-col 
             gap-[1vh]
           md:gap-[10px] md:p-[10px] w-full 
-          lg:w-1/2 lg:gap-[20px] xl:p-[15px] lg:p-[10px]"
+          lg:w-1/2 lg:gap-[20px] 2xl:p-[15px] lg:p-[10px]"
           >
             <h1
-              className="items-center text-[1rem]
-              lg:text-[1.5rem] xl:text-[2rem] font-extrabold "
+              className="items-center text-[2.5vh]
+              lg:text-[1.5rem] 2xl:text-[2rem] font-extrabold "
             >
               <b>Experience</b>
             </h1>
@@ -147,24 +148,24 @@ const About = () => {
               <img
                 src="./Concordia.png"
                 alt="Concordia University"
-                className="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] xl:w-[70px] xl:h-[70px]"
+                className="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] 2xl:w-[70px] 2xl:h-[70px]"
               />
               <div className="flex flex-col w-[65%]">
                 <h2
-                  className="text-[0.7rem] md:text-[0.9rem] lg:text-[1rem] xl:text-[1.5rem]"
+                  className="text-[2vh] md:text-[0.9rem] lg:text-[1rem] 2xl:text-[1.5rem]"
                 >
                   <b>Machine Learning Researcher</b>
                 </h2>
-                <h3 className="text-[0.7rem] md:text-[0.9rem] lg:text-[1rem] xl:text-[1.5rem]">
+                <h3 className="text-[2vh] md:text-[0.9rem] lg:text-[1rem] 2xl:text-[1.5rem]">
                   Concordia University
                 </h3>
-                <p className="text-[0.7rem] md:text-[0.8rem] xl:text-[1.2rem] font-light text-justify text-gray-00">
+                <p className="text-[2vh] md:text-[0.8rem] 2xl:text-[1.2rem] font-light text-justify text-gray-00">
                   Developed a novel Safe Deep Reinforcement Learning
                   (SDRL)approach for optimal dispatch of energy hubs to minimize
                   operational cost and satisfy operational constraints.
                 </p>
               </div>
-              <div className="ml-auto text-[0.7rem] xl:text-[1rem]">
+              <div className="ml-auto text-[0.7rem] 2xl:text-[1rem]">
                 (Jan 2021 - Apr 2023)
               </div>
             </motion.div>
@@ -176,23 +177,23 @@ const About = () => {
               <img
                 src="./iranbar.webp"
                 alt="IranBar icon"
-                className="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] xl:w-[70px] xl:h-[70px]"
+                className="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] 2xl:w-[70px] 2xl:h-[70px]"
               />
               <div className="flex flex-col w-[65%]">
                 <h2
-                  className="text-[0.7rem] md:text-[0.9rem] lg:text-[1rem] xl:text-[1.5rem]"
+                  className="text-[2vh] md:text-[0.9rem] lg:text-[1rem] 2xl:text-[1.5rem]"
                 >
                   <b>Junior Data Scientist</b>
                 </h2>
-                <h3 className="text-[0.7rem] md:text-[0.9rem] lg:text-[1rem] xl:text-[1.5rem]">
+                <h3 className="text-[2vh] md:text-[0.9rem] lg:text-[1rem] 2xl:text-[1.5rem]">
                   IranBar
                 </h3>
-                <p className="text-[0.7rem] md:text-[0.8rem] xl:text-[1.2rem] font-light text-justify text-gray-00">
+                <p className="text-[2vh] md:text-[0.8rem] 2xl:text-[1.2rem] font-light text-justify text-gray-00">
                   Collaborated with cross-functional teams to train, optimize,
                   and deploy data-driven models for delivery price prediction.
                 </p>
               </div>
-              <div className="ml-auto text-[0.7rem] xl:text-[1rem]">
+              <div className="ml-auto text-[0.7rem] 2xl:text-[1rem]">
                 (Jun 2019 - May 2020)
               </div>
             </motion.div>
