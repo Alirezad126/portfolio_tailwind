@@ -23,6 +23,7 @@ const Portfolio = () => {
             pb-10
             sm:pb-0
             md:pb-5
+            h-[100px]
           sm:text-[2rem]
           lg:text-[2.5rem]
           2xl:text-[4rem] text-center text-orange-400 md:text-[60px] font-bold ">

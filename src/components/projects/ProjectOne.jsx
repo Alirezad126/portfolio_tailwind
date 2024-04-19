@@ -19,8 +19,8 @@ const ProjectOne = () => {
 
   return (
     <section>
-      <div className="flex justify-center items-center w-full h-full">
-        <div className="w-4/5 h-full m-auto flex gap-[2vw] items-center">
+      <div className="flex justify-center items-end w-full h-full xl:pt-[150px]">
+        <div className="w-4/5 h-full m-auto flex gap-[2vw] items-start">
           <div className="flex flex-col gap-3 h-4/5 w-2/3 justify-center items-center">
             <div className="w-full h-1/3 flex justify-center">
               <img

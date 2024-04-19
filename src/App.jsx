@@ -17,7 +17,7 @@ function App() {
         {" "}
         <Parallax />{" "}
       </section>
-      <section id="About">
+      <section className="min-h-[100vh] h-[120vh]" id="About">
         {" "}
         <About />{" "}
       </section>

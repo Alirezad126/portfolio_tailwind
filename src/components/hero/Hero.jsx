@@ -88,7 +88,7 @@ const Hero = () => {
           animate="animate"
         >
           <motion.h2 variants={textVariants} style={{textShadow:"3px 3px 3px gray", letterSpacing:"6px" }} className="text-[4vh] font-bold sm:text-[4vh] lg:text-[5vh]">Alireza Daneshvar</motion.h2>
-          <motion.h1 variants={textVariants} className="text-[4vh] h-[4em] overflow-ellipsis font-bold sm:text-[5vh] lg:text-[6vh]" >
+          <motion.h1 variants={textVariants} className="text-[4vh] h-[4em] overflow-ellipsis font-bold sm:text-[5vh] lg:text-[4vh] xl:text-[5vh]" >
             <div>
               <ReactTyped
                 strings={[
@@ -119,7 +119,7 @@ const Hero = () => {
               href="https://drive.google.com/file/d/1Cl0-hcOaX8NxvMPlHXzCNyVqZKiipbUI/view?usp=sharing"
             >
               <motion.button className="heroButtons p-[20px] font-semibold text-base cursor-pointer border-2 rounded-full  bg-transparent 
-          sm:p-[20px] sm:text-xl z-50" 
+          xl:p-[20px] sm:text-xl z-50" 
               variants={textVariants}>
                 Download My CV
               </motion.button>
