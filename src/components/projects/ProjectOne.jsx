@@ -33,9 +33,9 @@ const ProjectOne = () => {
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     if (name === "x") {
-      setX(Number(value));
+      setX(value);
     } else if (name === "y") {
-      setY(Number(value));
+      setY(value);
     }
   };
 
@@ -107,6 +107,7 @@ const ProjectOne = () => {
                     max={40}
                     required
                     placeholder="Enter the X-Axis number of cells"
+                    value={x}
                     onChange={handleInputChange}
                     name="x"
                   />
@@ -117,6 +118,7 @@ const ProjectOne = () => {
                     max={40}
                     required
                     placeholder="Enter the Y-Axis number of cells"
+                    value={y}
                     onChange={handleInputChange}
                     name="y"
                   />
