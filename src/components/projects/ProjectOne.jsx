@@ -1,9 +1,12 @@
 import Carousel from "./Carousel";
 import { useState } from "react";
 import axios from "axios";
+import { motion } from "framer-motion";
+import { AiOutlineGithub } from "react-icons/ai";
+
 const item = {
   id: 1,
-  title: "Reinforcement Learning Agent Playing PySnake Game",
+  title: "Reinforcement Learning Agent Playing PySnake Game ",
   img: "https://www.coolmathgames.com/sites/default/files/Snake_OG-logo.jpg",
   result:
     "https://github.com/Alirezad126/PySnake/blob/main/results/score_61.gif?raw=true",
@@ -50,7 +53,7 @@ const ProjectOne = () => {
     try {
       const response = await axios.post(url, requestBody, {
         headers: headers,
-        timeout: 45000
+        timeout: 45000,
       });
 
       const base64Response = response.data.image_base64;
@@ -79,9 +82,18 @@ const ProjectOne = () => {
               />
             </div>
             <div className="text-center w-3/5">
-              <h1 className="text-white font-bold text-[1.6vw]">
+              <h1 className="flex text-white font-bold text-[1.6vw]">
                 {item.title}
+                <motion.a
+                href="https://github.com/Alirezad126/PySnake"
+                target="_blank"
+                whileHover={{ scale: 1.9 }}
+                className=""
+              >
+                <AiOutlineGithub className="w-10 h-10 sm:w-15 sm:h-15 " />
+              </motion.a>
               </h1>
+              
             </div>
             <div className="w-full h-1/2 flex ">
               <Carousel />

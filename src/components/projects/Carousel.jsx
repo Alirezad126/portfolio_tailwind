@@ -5,28 +5,24 @@ function Carousel() {
   const slides = [
     {
       text: <div>
-        <p className="font-bold">Description</p>
-        <p className="font-light text-gray-400">This project integrates a Pygame-based interface with a reinforcement learning (RL) environment. It allows both machine learning agents and human players to interact with the PySnake game. The project demonstrates the use of a Deep Q-Network (DQN) agent to autonomously play and learn from the game environment.</p>
+        <p className="font-extrabold text-3xl">Description</p>
+        <p className="font-light text-gray-400">This project integrates a Pygame-based interface with a reinforcement learning (RL) environment. It allows both machine learning agents and human players to interact with the PySnake game. The project demonstrates the use of a Deep Q-Network (DQN) agent to autonomously play and learn from the game environment. The objective is to train an AI agent to navigate the game by controlling a snake, maximizing its score by consuming food items while avoiding collisions with itself and the game boundaries.</p>
       </div>
     },
 
     {
       text: <div>
-      <p className="font-bold">Repository Structure</p>
-      <p className="font-light text-gray-400"> <TbPoint className="inline"/> envs: This directory includes the RL environment for the PySnake game, providing an interface for training and evaluating RL agents.</p>
-      <p className="font-light text-gray-400"> <TbPoint className="inline"/> agent: Contains the implementation of the DQN agent, along with evaluation scripts to measure performance and generate visual feedback in the form of a GIF.</p>
-      <p className="font-light text-gray-400"> <TbPoint className="inline"/> pygame: Hosts the graphical game interface for human players, enabling them to play PySnake using a Pygame-based setup.</p>
+      <p className="font-extrabold text-3xl">Game Mechanics</p>
+      <p className="font-light text-gray-400"> <TbPoint className="inline"/> <b className="font-bold">Game Environment:</b> The environment consists of a fixed-size grid with defined boundaries. Within this grid, the snake moves in discrete steps from one cell to another.</p>
+      <p className="font-light text-gray-400"> <TbPoint className="inline"/> <b className="font-bold">Action Space:</b> The agent can choose from four discrete actions corresponding to the directions: up, down, left, and right. Each action determines the snake’s movement direction.</p>
+      <p className="font-light text-gray-400"> <TbPoint className="inline"/> <b className="font-bold">State Representation:</b> The game’s state includes the position of the snake’s head, the location of the food item, and the presence of immediate threats (like approaching walls or the snake's body). This helps the agent understand its current situation to make informed decisions.</p>
       </div>,
     },
     {
       text: <div>
-      <p className="font-bold">Project Setup</p>
-      <p className="font-medium">1. Clone the Repository</p>
-      <p className="font-light text-gray-400 "> <TbPoint className="inline"/> Command: <code className="text-[0.7vw] ml-6">git clone https://github.com/Alirezad126/PySnake.git</code></p>
-      <p className="font-light text-gray-400"> <TbPoint className="inline"/> Clone the project to your local machine to get started with the setup.</p>
-      <p className="font-medium">2. Install Dependencies</p>
-      <p className="font-light text-gray-400"> <TbPoint className="inline"/> Ensure Python 3 is installed on your machine.</p>
-      <p className="font-light text-gray-400 "> <TbPoint className="inline"/> Command: <code className="text-[0.7vw] ml-6">pip install -r requirements.txt</code></p>
+      <p className="font-extrabold text-3xl">Objectives and Rewards</p>
+      <p className="font-light text-gray-400"> <TbPoint className="inline"/> <b className="font-bold">Objective:</b> The primary goal for the agent is to increase its score, which it achieves by eating food. Each piece of food consumed not only increases the score but also extends the snake’s length.</p>
+      <p className="font-light text-gray-400"> <TbPoint className="inline"/> <b className="font-bold">Rewards:</b>  The training process involves a reward system where positive rewards are given for eating food and negative rewards are assigned for crashing into the walls or the snake itself. The agent learns to navigate by maximizing its cumulative reward.</p>
 
 
       </div>,
