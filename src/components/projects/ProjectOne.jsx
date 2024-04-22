@@ -1,5 +1,6 @@
 import Carousel from "./Carousel";
 import { useState } from "react";
+import axios from "axios";
 const item = {
   id: 1,
   title: "Reinforcement Learning Agent Playing PySnake Game",
@@ -9,11 +10,59 @@ const item = {
   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in ex vitae sapien bibendum tristique. Suspendisse lacinia, nunc eu iaculis mollis, tellus arcu tristique lectus, non tempus tellus turpis vel enim ",
 };
 
+function base64ToBlob(base64) {
+  base64 = base64.replace(/\s/g, "");
+
+  const base64Data = base64.split(",");
+  const base64Value = base64Data.length > 1 ? base64Data[1] : base64Data[0];
+
+  const binaryString = window.atob(base64Value);
+  const bytes = new Uint8Array(binaryString.length);
+  for (let i = 0; i < binaryString.length; i++) {
+    bytes[i] = binaryString.charCodeAt(i);
+  }
+  return new Blob([bytes], { type: "image/gif" });
+}
+
 const ProjectOne = () => {
-  const [showResults, setShowResults] = useState(false);
-  const handleResults = () => {
-    if (showResults === false){
-      setShowResults(true)
+  const [imageURL, setImageUrl] = useState(null);
+  const [imageURLLoading, setimageURLLoading] = useState(false);
+  const [x, setX] = useState(5);
+  const [y, setY] = useState(5);
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    if (name === "x") {
+      setX(Number(value));
+    } else if (name === "y") {
+      setY(Number(value));
+    }
+  };
+
+  const fetchImage = async () => {
+    setimageURLLoading(true);
+    const requestBody = { x: x, y: y };
+    const url =
+      "https://09d7oyruyd.execute-api.us-east-1.amazonaws.com/dev/run";
+    const headers = {
+      "Content-Type": "application/json",
+    };
+    try {
+      const response = await axios.post(url, requestBody, {
+        headers: headers,
+        timeout: 45000
+      });
+
+      const base64Response = response.data.image_base64;
+
+      const imageBlob = base64ToBlob(base64Response);
+      const imageObjectUrl = URL.createObjectURL(imageBlob);
+
+      setImageUrl(imageObjectUrl);
+    } catch (error) {
+      console.log("error fetching the image", error);
+    } finally {
+      setimageURLLoading(false);
     }
   };
 
@@ -40,30 +89,95 @@ const ProjectOne = () => {
           </div>
 
           <div className="flex flex-col gap-3 h-3/4 w-1/3 p-[30px] justify-center items-center">
-            <div className="text-center w-4/5">
-              <h1 className="text-white font-bold text-[1.6vw]">
-                Live Deployment
-              </h1>
-            </div>
-            {showResults && (
-              <div className="flex-1 h-1/2 ">
-                <img
-                  className="w-full h-full rounded-xl object-fit "
-                  src={item.result}
-                  alt=""
-                />
+            {imageURL !== null || (
+              <div className="text-center w-4/5 flex flex-col gap-5">
+                <h1 className="text-white font-bold text-[1.6vw]">
+                  Try it Online
+                </h1>
+                <p className="text-lg">
+                  Given that the model is hosted on the serverless AWS Lambda
+                  platform, there may be a slight delay in initializing the
+                  container and retrieving the results.
+                </p>
+                <form className="flex flex-1 flex-col gap-[2vh]">
+                  <input
+                    className="p-[2vh] lg:p-[10px] bg-transparent border-white border-[1px] rounded-2xl text-white"
+                    type="number"
+                    min={5}
+                    max={40}
+                    required
+                    placeholder="Enter the X-Axis number of cells"
+                    onChange={handleInputChange}
+                    name="x"
+                  />
+                  <input
+                    className="p-[2vh] lg:p-[10px] bg-transparent border-white border-[1px] rounded-2xl text-white"
+                    type="number"
+                    min={5}
+                    max={40}
+                    required
+                    placeholder="Enter the Y-Axis number of cells"
+                    onChange={handleInputChange}
+                    name="y"
+                  />
+                  {imageURLLoading || (
+                    <button
+                      onClick={fetchImage}
+                      className="text-xl text-white p-[2vh] lg:p-[20px] border-none bg-indigo-500 hover:bg-indigo-400 cursor-pointer font-semibold shadow rounded-md transition ease-in-out duration-150"
+                    >
+                      Send Request
+                    </button>
+                  )}
+                  {imageURLLoading && (
+                    <button
+                      type="button"
+                      class="inline-flex justify-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md text-white bg-indigo-500 hover:bg-indigo-400 transition ease-in-out duration-150 cursor-not-allowed"
+                      disabled=""
+                    >
+                      <svg
+                        class="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                      >
+                        <circle
+                          class="opacity-25"
+                          cx="12"
+                          cy="12"
+                          r="10"
+                          stroke="currentColor"
+                          stroke-width="4"
+                        ></circle>
+                        <path
+                          class="opacity-75"
+                          fill="currentColor"
+                          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                        ></path>
+                      </svg>
+                      Processing...
+                    </button>
+                  )}
+                </form>
               </div>
             )}
+            {imageURL && (
+              <div className="flex flex-col flex-1 h-1/2 items-center gap-5 ">
+                <img
+                  className="w-full h-1/2 rounded-xl object-fit "
+                  src={imageURL}
+                  alt=""
+                />
 
-            <div className="h-1/6 pt-10 text-center">
-              <button
-                onClick={handleResults}
-                className=" text-white p-[2vh] lg:p-[20px] border-none rounded-xl bg-orange-600 cursor-pointer font-medium"
-              >
-                {" "}
-                Click Me!
-              </button>
-            </div>
+                <button
+                  onClick={() => {
+                    setImageUrl(null);
+                  }}
+                  className="text-xl text-white p-[2vh] lg:p-[20px] border-none bg-indigo-500 hover:bg-indigo-400 cursor-pointer font-semibold shadow rounded-md transition ease-in-out duration-150"
+                >
+                  Try again?
+                </button>
+              </div>
+            )}
           </div>
         </div>
       </div>
