@@ -17,7 +17,7 @@ const Portfolio = () => {
   });
 
   return (
-    <div id="Projects" className="relative bg-gradient-to-a" ref={ref}>
+    <div id="Projects" className="relative bg-gradient-to-b sm:bg-gradient-to-a" ref={ref}>
       <div className="sticky top-0 left:0 text-[2rem]
             pt-5
             pb-10

@@ -51,6 +51,19 @@ const About = () => {
           </h1>
         </motion.div>
 
+        <div className="p-3">
+          <p className="text-[1.8vh] md:text-[1rem] 2xl:text-[1.2rem] text-justify">Hi there! 👋 I’m Alireza. I recently completed my Master’s
+          in Building Engineering at Concordia University and hold a Bachelor's
+          degree in Mechanical Engineering from Iran University of Science and
+          Technology. I’m passionate about usingartificial intelligence
+          to enhance our daily spaces 🚀. Previously, I worked as a Junior Data
+          Scientist at IranBarNet, where I improved logistics by optimizing
+          shipping and driving routes. 📊 I love simplifying complex challenges
+          into effective solutions and I'll occasionally share insights from my
+          live projects right here—so stay tuned! If you’re interested in making
+          a difference with technology, let’s connect! 🌟</p>
+        </div>
+
         <motion.div
           // variants={variants}
           // initial="initial"
@@ -82,9 +95,7 @@ const About = () => {
                 className="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] 2xl:w-[70px] 2xl:h-[70px]"
               />
               <div className="flex flex-col w-[70%]">
-                <h2
-                  className="text-[1.8vh] md:text-[0.9rem] lg:text-[1rem] 2xl:text-[1.5rem]"
-                >
+                <h2 className="text-[1.8vh] md:text-[0.9rem] lg:text-[1rem] 2xl:text-[1.5rem]">
                   <b>M.Sc.</b> Building Engineering
                 </h2>
                 <h3 className="text-[1.8vh] md:text-[0.9rem] lg:text-[1rem] 2xl:text-[1.5rem]">
@@ -110,9 +121,7 @@ const About = () => {
                 className="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] 2xl:w-[70px] 2xl:h-[70px] bg-white rounded-full"
               />
               <div className="flex flex-col w-[70%]">
-                <h2
-                  className="text-[1.8vh] md:text-[0.9rem] lg:text-[1rem] 2xl:text-[1.5rem]"
-                >
+                <h2 className="text-[1.8vh] md:text-[0.9rem] lg:text-[1rem] 2xl:text-[1.5rem]">
                   <b>B.Sc.</b> Mechanical Engineering
                 </h2>
                 <h3 className="text-[1.8vh] md:text-[0.9rem] lg:text-[1rem] 2xl:text-[1.5rem]">
@@ -151,9 +160,7 @@ const About = () => {
                 className="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] 2xl:w-[70px] 2xl:h-[70px]"
               />
               <div className="flex flex-col w-[65%]">
-                <h2
-                  className="text-[1.8vh] md:text-[0.9rem] lg:text-[1rem] 2xl:text-[1.5rem]"
-                >
+                <h2 className="text-[1.8vh] md:text-[0.9rem] lg:text-[1rem] 2xl:text-[1.5rem]">
                   <b>Machine Learning Researcher</b>
                 </h2>
                 <h3 className="text-[1.8vh] md:text-[0.9rem] lg:text-[1rem] 2xl:text-[1.5rem]">
@@ -180,9 +187,7 @@ const About = () => {
                 className="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] 2xl:w-[70px] 2xl:h-[70px]"
               />
               <div className="flex flex-col w-[65%]">
-                <h2
-                  className="text-[1.8vh] md:text-[0.9rem] lg:text-[1rem] 2xl:text-[1.5rem]"
-                >
+                <h2 className="text-[1.8vh] md:text-[0.9rem] lg:text-[1rem] 2xl:text-[1.5rem]">
                   <b>Junior Data Scientist</b>
                 </h2>
                 <h3 className="text-[1.8vh] md:text-[0.9rem] lg:text-[1rem] 2xl:text-[1.5rem]">

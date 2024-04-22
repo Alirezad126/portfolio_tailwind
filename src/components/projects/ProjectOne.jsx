@@ -30,8 +30,8 @@ function base64ToBlob(base64) {
 const ProjectOne = () => {
   const [imageURL, setImageUrl] = useState(null);
   const [imageURLLoading, setimageURLLoading] = useState(false);
-  const [x, setX] = useState(5);
-  const [y, setY] = useState(5);
+  const [x, setX] = useState(10);
+  const [y, setY] = useState(10);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -85,15 +85,14 @@ const ProjectOne = () => {
               <h1 className="flex text-white font-bold text-[1.6vw]">
                 {item.title}
                 <motion.a
-                href="https://github.com/Alirezad126/PySnake"
-                target="_blank"
-                whileHover={{ scale: 1.9 }}
-                className=""
-              >
-                <AiOutlineGithub className="w-10 h-10 sm:w-15 sm:h-15 " />
-              </motion.a>
+                  href="https://github.com/Alirezad126/PySnake"
+                  target="_blank"
+                  whileHover={{ scale: 1.9 }}
+                  className=""
+                >
+                  <AiOutlineGithub className="w-10 h-10 sm:w-15 sm:h-15 " />
+                </motion.a>
               </h1>
-              
             </div>
             <div className="w-full h-1/2 flex ">
               <Carousel />
@@ -106,10 +105,15 @@ const ProjectOne = () => {
                 <h1 className="text-white font-bold text-[1.6vw]">
                   Try it Online
                 </h1>
-                <p className="text-lg">
-                  Given that the model is hosted on the serverless AWS Lambda
-                  platform, there may be a slight delay in initializing the
-                  container and retrieving the results.
+                <p className="text-lg text-start">
+                Enter X and Y axis cell numbers for processing. The model, on
+                AWS Lambda's serverless platform, will play the game and display
+                the GIF response (Coool right ?!). <br />{" "}
+                <p className="font-bold">
+                  {" "}
+                  Note: Exceeding about 20 cells may lead to prolonged
+                  processing, risking API timeout. (AWL Lambda is serverless and the code execution might take a bit longer)
+                </p>
                 </p>
                 <form className="flex flex-1 flex-col gap-[2vh]">
                   <input
@@ -137,7 +141,7 @@ const ProjectOne = () => {
                   {imageURLLoading || (
                     <button
                       onClick={fetchImage}
-                      className="text-xl text-white p-[2vh] lg:p-[20px] border-none bg-indigo-500 hover:bg-indigo-400 cursor-pointer font-semibold shadow rounded-md transition ease-in-out duration-150"
+                      className="text-xl text-white p-[2vh] lg:p-[20px] border-none bg-orange-500 hover:bg-orange-400 cursor-pointer font-semibold shadow rounded-md transition ease-in-out duration-150"
                     >
                       Send Request
                     </button>
@@ -145,7 +149,7 @@ const ProjectOne = () => {
                   {imageURLLoading && (
                     <button
                       type="button"
-                      class="inline-flex justify-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md text-white bg-indigo-500 hover:bg-indigo-400 transition ease-in-out duration-150 cursor-not-allowed"
+                      class="inline-flex justify-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md text-white bg-orange-500 hover:bg-orange-400 transition ease-in-out duration-150 cursor-not-allowed"
                       disabled=""
                     >
                       <svg
@@ -186,7 +190,7 @@ const ProjectOne = () => {
                   onClick={() => {
                     setImageUrl(null);
                   }}
-                  className="text-xl text-white p-[2vh] lg:p-[20px] border-none bg-indigo-500 hover:bg-indigo-400 cursor-pointer font-semibold shadow rounded-md transition ease-in-out duration-150"
+                  className="text-xl text-white p-[2vh] lg:p-[20px] border-none bg-orange-500 hover:bg-orange-400 cursor-pointer font-semibold shadow rounded-md transition ease-in-out duration-150"
                 >
                   Try again?
                 </button>

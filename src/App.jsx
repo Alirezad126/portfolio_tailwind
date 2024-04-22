@@ -17,7 +17,7 @@ function App() {
         {" "}
         <Parallax />{" "}
       </section>
-      <section className="min-h-[100vh] h-[120vh]" id="About">
+      <section className="min-h-[100vh] h-[150vh]" id="About">
         {" "}
         <About />{" "}
       </section>
@@ -26,7 +26,7 @@ function App() {
         <Skills />{" "}
       </section>
       <Portfolio />
-      <section id="Contact">
+      <section id="Contact" className="bg-gradient-to-a sm:bg-gradient-to-b">
         <Contact />
       </section>
     </div>

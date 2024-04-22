@@ -63,12 +63,12 @@ const Contact = () => {
           Let's work together
         </motion.h1>
         <motion.div variants={variants}>
-          <h2>Mail</h2>
-          <span className="font-light">Alirezad126@gmail.com</span>
+          <h2>Email:</h2>
+          <span className="font-light">a_aneshv@live.concordia.ca</span>
         </motion.div>
         <motion.div variants={variants}>
-          <h2>Address</h2>
-          <span className="font-light">Montreal</span>
+          <h2>Location:</h2>
+          <span className="font-light">Canada</span>
         </motion.div>
         <motion.div variants={variants}>
           <h2>Phone</h2>
