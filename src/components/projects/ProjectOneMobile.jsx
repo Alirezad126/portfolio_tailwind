@@ -158,9 +158,9 @@ function ProjectOneMobile() {
                   processing, risking API timeout.(AWL Lambda is serverless and the code execution might take a bit longer)
                 </p>
               </p>
-              <form className="flex flex-1 flex-col gap-[2vh]">
+              <form className="flex flex-1 flex-col gap-[2vh] items-center">
                 <input
-                  className="p-[5px] text-center lg:p-[10px] bg-transparent border-white border-[1px] rounded-2xl text-white"
+                  className="p-[5px] w-3/4 text-center lg:p-[10px] bg-transparent border-white border-[1px] rounded-2xl text-white"
                   type="number"
                   min={5}
                   max={40}
@@ -171,7 +171,7 @@ function ProjectOneMobile() {
                   name="x"
                 />
                 <input
-                  className="p-[5px] text-center lg:p-[10px] bg-transparent border-white border-[1px] rounded-2xl text-white"
+                  className="p-[5px] w-3/4  text-center lg:p-[10px] bg-transparent border-white border-[1px] rounded-2xl text-white"
                   type="number"
                   min={5}
                   max={40}
@@ -256,7 +256,7 @@ function ProjectOneMobile() {
   };
 
   return (
-    <section>
+    <section className="relative">
       <div className="flex flex-col justify-center text-center m-auto w-4/5 h-3/7 pt-[100px]">
         <img
           className="h-full w-3/5 md:w-1/2 m-auto rounded-xl object-fit "
@@ -284,7 +284,7 @@ function ProjectOneMobile() {
         {/* Left Arrow */}
         <div
           onClick={prevSlide}
-          className="fixed top-[65%] left-[5%] -translate-x-0 translate-y-[-50%] text-2xl rounded-full p-2 bg-white/20 text-white cursor-pointer"
+          className="absolute top-[50%] -translate-x-0 translate-y-[-50%] right-[0px]text-2xl rounded-full p-2 bg-white/20 text-white cursor-pointer"
         >
           <div className="hidden md:block z-50">
             <BsChevronCompactLeft size={30} />
@@ -297,7 +297,7 @@ function ProjectOneMobile() {
         {/* Rigth Arrow */}
         <div
           onClick={nextSlide}
-          className="fixed top-[65%] right-[5%] -translate-x-0 translate-y-[-50%] text-2xl rounded-full p-2 bg-white/20 text-white cursor-pointer"
+          className="absolute top-[50%] -translate-x-0 translate-y-[-50%] right-[0px] text-2xl rounded-full p-2 bg-white/20 text-white cursor-pointer"
         >
           <div className="hidden md:block z-50">
             <BsChevronCompactRight size={30} />
