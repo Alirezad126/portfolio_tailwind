@@ -163,7 +163,7 @@ const ProjectOne = () => {
               </div>
             )}
             {imageURL && (
-              <div className="flex flex-col flex-1 h-1/2 items-center gap-5 ">
+              <div className="flex flex-col flex-1 h-full w-full items-center gap-5 ">
                 <img
                   className="w-full h-1/2 rounded-xl object-fit "
                   src={imageURL}
