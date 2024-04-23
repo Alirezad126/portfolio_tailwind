@@ -14,16 +14,13 @@ function App() {
         <Hero />
       </section>
       <section id="Parallax">
-        {" "}
-        <Parallax />{" "}
+        <Parallax />
       </section>
       <section className="min-h-[100vh] h-[150vh]" id="About">
-        {" "}
-        <About />{" "}
+        <About />
       </section>
-      <section className="flex sm:hidden" id="Skills">
-        {" "}
-        <Skills />{" "}
+      <section className="flex sm:hidden min-h-[100vh] h-[120vh]" id="Skills">
+        <Skills />
       </section>
       <Portfolio />
       <section id="Contact" className="bg-gradient-to-a sm:bg-gradient-to-b">

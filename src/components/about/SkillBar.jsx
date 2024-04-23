@@ -1,4 +1,4 @@
-const SkillBar = ({ image, name }) => {
+const SkillBar = ({ image, name}) => {
   return (
     <div className="lg:w-1/4 flex flex-col gap-[5px] items-center ">
       <div>{image}</div>

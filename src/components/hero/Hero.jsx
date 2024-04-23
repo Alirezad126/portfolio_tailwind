@@ -116,7 +116,7 @@ const Hero = () => {
 
             <a
               className="CVButton"
-              href="https://drive.google.com/file/d/1Cl0-hcOaX8NxvMPlHXzCNyVqZKiipbUI/view?usp=sharing"
+              href="https://drive.google.com/file/d/1PB154WG_TZ-NOl71YBPeLLfqMsNwhD78/view?usp=sharing"
             >
               <motion.button className="heroButtons p-[20px] font-semibold text-base cursor-pointer border-2 rounded-full  bg-transparent 
           xl:p-[20px] sm:text-xl z-50" 

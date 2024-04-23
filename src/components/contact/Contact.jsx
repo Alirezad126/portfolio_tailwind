@@ -48,7 +48,7 @@ const Contact = () => {
   return (
     <motion.div
       ref={ref}
-      className="flex flex-col lg:flex-row h-full pt-20 m-auto gap-[10px] items-center max-w-[80%]"
+      className="flex flex-col lg:flex-row h-full pt-20 m-auto gap-[10px] items-center max-w-[80%] "
       variants={variants}
       initial="initial"
       whileInView={"animate"}
@@ -78,7 +78,7 @@ const Contact = () => {
 
       <motion.div className="md:flex-1 md:relative flex justify-center">
         <motion.div
-          className="stroke-orange-400 absolute m-auto z-[-1]"
+          className="stroke-orange-400 absolute m-auto z-[98]"
           initial={{ opacity: 1 }}
           whileInView={{ opacity: 0 }}
           transition={{ delay: 3, duration: 1 }}
@@ -107,7 +107,7 @@ const Contact = () => {
           </svg>
         </motion.div>
         <motion.form
-          className="flex flex-1 flex-col gap-[2vh]"
+          className="flex flex-1 flex-col gap-[2vh] z-[99]"
           ref={formRef}
           onSubmit={sendEmail}
           initial={{ opacity: 0 }}

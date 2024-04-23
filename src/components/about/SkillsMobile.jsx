@@ -92,6 +92,14 @@ const Skills = ({variants}) => {
           <SkillBar image={<SiTensorflow className="w-[9vw] h-[9vw] "/>} name={"Tensorflow"} />
           <SkillBar image={<SiScikitlearn className="w-[9vw] h-[9vw] "/>} name={"Scikit"} />
           <SkillBar image={<SiOpencv className="w-[9vw] h-[9vw] "/>} name={"OpenCV"} />
+          <div className="lg:w-1/4 flex flex-col gap-[5px] items-center ">
+            <div>
+              <img className="w-[9vw] h-[9vw]" src="https://cdn-lfs.huggingface.co/repos/96/a2/96a2c8468c1546e660ac2609e49404b8588fcf5a748761fa72c154b2836b4c83/533d195d96af7a2f996b2170c941e05698e8b270d29366f5e1f109d4ddf0bd55?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27hf-logo-pirate.svg%3B+filename%3D%22hf-logo-pirate.svg%22%3B&response-content-type=image%2Fsvg%2Bxml&Expires=1714149498&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcxNDE0OTQ5OH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5odWdnaW5nZmFjZS5jby9yZXBvcy85Ni9hMi85NmEyYzg0NjhjMTU0NmU2NjBhYzI2MDllNDk0MDRiODU4OGZjZjVhNzQ4NzYxZmE3MmMxNTRiMjgzNmI0YzgzLzUzM2QxOTVkOTZhZjdhMmY5OTZiMjE3MGM5NDFlMDU2OThlOGIyNzBkMjkzNjZmNWUxZjEwOWQ0ZGRmMGJkNTU%7EcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj0qJnJlc3BvbnNlLWNvbnRlbnQtdHlwZT0qIn1dfQ__&Signature=jN6d1uF3AY9b%7ENUvEiRyaDqjCBGLYPL5SXD2nkoK9EKku0a%7EID3Cw8pPPi-lEjHaX-Spv8u0e88hq8WwSIZO3t3UmSazFjHtLqtfwX9W27L-u%7ExFxXr31Mur%7EuBKaZu-KSlccMD0T5VmwkAHkX-9xO4w5wWMV4J9VhsRtgMqVUkaZhwW9X0lVmDVfK32%7EzOiB1ZwisPlzAvvYpfxfTxyxaARHFWrbBi7cLtIGkQBSZsmgFx-J2TM1cX6pN9vlWbqy3SgBvagzqNVtjkRWuyPipsr1ws3qkN7wAaNeqIWcORtgYM5faOkhubPyvgTufrUDQF19p9OhxHkgh3zgQGyRw__&Key-Pair-Id=KVTP0A1DKRTAX" />
+            </div>
+            <p className="text-[1.8vh] sm:text-[10px] md:text-[10px] lg:text-[15px]">
+              HuggingFace
+            </p>
+          </div>
           <SkillBar image={<SiOpenaigym className="w-[9vw] h-[9vw] "/>} name={"Gym"} />
         </div>
       </motion.div>

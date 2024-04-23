@@ -20,11 +20,9 @@ import { FaBootstrap } from "react-icons/fa";
 import { SiPostgresql } from "react-icons/si";
 import SkillBar from "./SkillBar";
 
-
-
-const Skills = ({variants}) => {
-    return (
-      <motion.div
+const Skills = ({ variants }) => {
+  return (
+    <motion.div
       variants={variants}
       initial="initial"
       whileInView="animate"
@@ -36,12 +34,22 @@ const Skills = ({variants}) => {
         whileHover={{ background: "lightgray", color: "black" }}
         className="flex flex-col items-center gap-[10px] border-[0.5px] rounded-xl w-1/5 lg:h-full h-4/5 lg:p-[20px] p-[10px] mb-[10px]  "
       >
-        <div className="lg:mb-10px md:text-center md:text-[15px] lg:text-[20px] sm:text-[0.8rem]" >
+        <div className="lg:mb-10px md:text-center md:text-[15px] lg:text-[20px] sm:text-[0.8rem]">
           <h2>Programming</h2>
         </div>
         <div className="flex sm:flex-col lg:flex-row lg:gap-[20px] lg:h-[unset] lg:justify-center gap-[5px] flex-wrap h-3/4 w-full">
-          <SkillBar image={<FaPython className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  sm:w-[1.4em] sm:h-[1.4em] xl:w-[3em] xl:h-[3em]"/>} name={"Python"} />
-          <SkillBar image={<TbBrandCpp className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  sm:w-[1.4em] sm:h-[1.4em] xl:w-[3em] xl:h-[3em]"/>} name={"C++"} />
+          <SkillBar
+            image={
+              <FaPython className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  sm:w-[1.4em] sm:h-[1.4em] xl:w-[3em] xl:h-[3em]" />
+            }
+            name={"Python"}
+          />
+          <SkillBar
+            image={
+              <TbBrandCpp className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  sm:w-[1.4em] sm:h-[1.4em] xl:w-[3em] xl:h-[3em]" />
+            }
+            name={"C++"}
+          />
           <SkillBar
             image={
               <svg
@@ -59,8 +67,12 @@ const Skills = ({variants}) => {
             }
             name={"MATLAB"}
           />
-          <SkillBar image={<SiGnubash className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  sm:w-[1.4em] sm:h-[1.4em] xl:w-[3em] xl:h-[3em]"/>} name={"Bash"} />
-          
+          <SkillBar
+            image={
+              <SiGnubash className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  sm:w-[1.4em] sm:h-[1.4em] xl:w-[3em] xl:h-[3em]" />
+            }
+            name={"Bash"}
+          />
         </div>
       </motion.div>
 
@@ -74,11 +86,44 @@ const Skills = ({variants}) => {
           <h2>Machine Learning</h2>
         </div>
         <div className="flex sm:flex-col lg:flex-row lg:gap-[20px] lg:h-[unset] lg:justify-center gap-[5px] flex-wrap h-3/4 w-full">
-          <SkillBar image={<SiPytorch className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  sm:w-[1.4em] sm:h-[1.4em] xl:w-[3em] xl:h-[3em] "/>} name={"PyTorch"} />
-          <SkillBar image={<SiTensorflow className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  sm:w-[1.4em] sm:h-[1.4em] xl:w-[3em] xl:h-[3em]"/>} name={"Tensorflow"} />
-          <SkillBar image={<SiScikitlearn className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  sm:w-[1.4em] sm:h-[1.4em] xl:w-[3em] xl:h-[3em]"/>} name={"Scikit"} />
-          <SkillBar image={<SiOpencv className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  sm:w-[1.4em] sm:h-[1.4em] xl:w-[3em] xl:h-[3em]"/>} name={"OpenCV"} />
-          <SkillBar image={<SiOpenaigym className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  sm:w-[1.4em] sm:h-[1.4em] xl:w-[3em] xl:h-[3em]"/>} name={"Gym"} />
+          <SkillBar
+            image={
+              <SiPytorch className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  sm:w-[1.4em] sm:h-[1.4em] xl:w-[3em] xl:h-[3em] " />
+            }
+            name={"PyTorch"}
+          />
+          <SkillBar
+            image={
+              <SiTensorflow className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  sm:w-[1.4em] sm:h-[1.4em] xl:w-[3em] xl:h-[3em]" />
+            }
+            name={"Tensorflow"}
+          />
+          <SkillBar
+            image={
+              <SiScikitlearn className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  sm:w-[1.4em] sm:h-[1.4em] xl:w-[3em] xl:h-[3em]" />
+            }
+            name={"Scikit"}
+          />
+          <SkillBar
+            image={
+              <SiOpencv className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  sm:w-[1.4em] sm:h-[1.4em] xl:w-[3em] xl:h-[3em]" />
+            }
+            name={"OpenCV"}
+          />
+          <div className="lg:w-1/4 flex flex-col gap-[5px] items-center ">
+            <div>
+              <img className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  sm:w-[1.4em] sm:h-[1.4em] xl:w-[3em] xl:h-[3em]" src="https://cdn-lfs.huggingface.co/repos/96/a2/96a2c8468c1546e660ac2609e49404b8588fcf5a748761fa72c154b2836b4c83/533d195d96af7a2f996b2170c941e05698e8b270d29366f5e1f109d4ddf0bd55?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27hf-logo-pirate.svg%3B+filename%3D%22hf-logo-pirate.svg%22%3B&response-content-type=image%2Fsvg%2Bxml&Expires=1714149498&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcxNDE0OTQ5OH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5odWdnaW5nZmFjZS5jby9yZXBvcy85Ni9hMi85NmEyYzg0NjhjMTU0NmU2NjBhYzI2MDllNDk0MDRiODU4OGZjZjVhNzQ4NzYxZmE3MmMxNTRiMjgzNmI0YzgzLzUzM2QxOTVkOTZhZjdhMmY5OTZiMjE3MGM5NDFlMDU2OThlOGIyNzBkMjkzNjZmNWUxZjEwOWQ0ZGRmMGJkNTU%7EcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj0qJnJlc3BvbnNlLWNvbnRlbnQtdHlwZT0qIn1dfQ__&Signature=jN6d1uF3AY9b%7ENUvEiRyaDqjCBGLYPL5SXD2nkoK9EKku0a%7EID3Cw8pPPi-lEjHaX-Spv8u0e88hq8WwSIZO3t3UmSazFjHtLqtfwX9W27L-u%7ExFxXr31Mur%7EuBKaZu-KSlccMD0T5VmwkAHkX-9xO4w5wWMV4J9VhsRtgMqVUkaZhwW9X0lVmDVfK32%7EzOiB1ZwisPlzAvvYpfxfTxyxaARHFWrbBi7cLtIGkQBSZsmgFx-J2TM1cX6pN9vlWbqy3SgBvagzqNVtjkRWuyPipsr1ws3qkN7wAaNeqIWcORtgYM5faOkhubPyvgTufrUDQF19p9OhxHkgh3zgQGyRw__&Key-Pair-Id=KVTP0A1DKRTAX" />
+            </div>
+            <p className="text-[1.8vh] sm:text-[10px] md:text-[10px] lg:text-[15px]">
+              HuggingFace
+            </p>
+          </div>
+          <SkillBar
+            image={
+              <SiOpenaigym className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  sm:w-[1.4em] sm:h-[1.4em] xl:w-[3em] xl:h-[3em]" />
+            }
+            name={"Gym"}
+          />
         </div>
       </motion.div>
 
@@ -93,11 +138,36 @@ const Skills = ({variants}) => {
         </div>
 
         <div className="flex sm:flex-col lg:flex-row lg:gap-[20px] lg:h-[unset] lg:justify-center gap-[5px] flex-wrap h-3/4 w-full">
-          <SkillBar image={<SiFlask className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  sm:w-[1.4em] sm:h-[1.4em] xl:w-[3em] xl:h-[3em]"/>} name={"Flask"} />
-          <SkillBar image={<SiFastapi className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  sm:w-[1.4em] sm:h-[1.4em] xl:w-[3em] xl:h-[3em]"/>} name={"FastAPI"} />
-          <SkillBar image={<SiAmazonaws className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  sm:w-[1.4em] sm:h-[1.4em] xl:w-[3em] xl:h-[3em]"/>} name={"AWS"} />
-          <SkillBar image={<SiDocker className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  sm:w-[1.4em] sm:h-[1.4em] xl:w-[3em] xl:h-[3em]"/>} name={"Docker"} />
-          <SkillBar image={<SiMlflow className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  sm:w-[1.4em] sm:h-[1.4em] xl:w-[3em] xl:h-[3em]"/>} name={"MLFlow"} />
+          <SkillBar
+            image={
+              <SiFlask className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  sm:w-[1.4em] sm:h-[1.4em] xl:w-[3em] xl:h-[3em]" />
+            }
+            name={"Flask"}
+          />
+          <SkillBar
+            image={
+              <SiFastapi className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  sm:w-[1.4em] sm:h-[1.4em] xl:w-[3em] xl:h-[3em]" />
+            }
+            name={"FastAPI"}
+          />
+          <SkillBar
+            image={
+              <SiAmazonaws className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  sm:w-[1.4em] sm:h-[1.4em] xl:w-[3em] xl:h-[3em]" />
+            }
+            name={"AWS"}
+          />
+          <SkillBar
+            image={
+              <SiDocker className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  sm:w-[1.4em] sm:h-[1.4em] xl:w-[3em] xl:h-[3em]" />
+            }
+            name={"Docker"}
+          />
+          <SkillBar
+            image={
+              <SiMlflow className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  sm:w-[1.4em] sm:h-[1.4em] xl:w-[3em] xl:h-[3em]" />
+            }
+            name={"MLFlow"}
+          />
         </div>
       </motion.div>
 
@@ -111,17 +181,47 @@ const Skills = ({variants}) => {
           <h2>Web Development</h2>
         </div>
         <div className="flex sm:flex-col lg:flex-row lg:gap-[20px] lg:h-[unset] lg:justify-center gap-[5px] flex-wrap h-3/4 w-full  ">
-          <SkillBar image={<RiReactjsFill className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  sm:w-[1.4em] sm:h-[1.4em] xl:w-[3em] xl:h-[3em]"/>} name={"React"} />
-          <SkillBar image={<SiJavascript className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  sm:w-[1.4em] sm:h-[1.4em] xl:w-[3em] xl:h-[3em]"/>} name={"JavaScript"} />
-          <SkillBar image={<FaHtml5 className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  sm:w-[1.4em] sm:h-[1.4em] xl:w-[3em] xl:h-[3em]"/>} name={"HTML"} />
-          <SkillBar image={<FaSass className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  sm:w-[1.4em] sm:h-[1.4em] xl:w-[3em] xl:h-[3em]"/>} name={"Sass"} />
-          <SkillBar image={<FaBootstrap className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  sm:w-[1.4em] sm:h-[1.4em] xl:w-[3em] xl:h-[3em]"/>} name={"Bootstrap"} />
-          <SkillBar image={<SiPostgresql className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  xl:w-[3em] xl:h-[3em]  sm:w-[1.4em] sm:h-[1.4em] "/>} name={"PostgreSQL"} />
+          <SkillBar
+            image={
+              <RiReactjsFill className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  sm:w-[1.4em] sm:h-[1.4em] xl:w-[3em] xl:h-[3em]" />
+            }
+            name={"React"}
+          />
+          <SkillBar
+            image={
+              <SiJavascript className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  sm:w-[1.4em] sm:h-[1.4em] xl:w-[3em] xl:h-[3em]" />
+            }
+            name={"JavaScript"}
+          />
+          <SkillBar
+            image={
+              <FaHtml5 className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  sm:w-[1.4em] sm:h-[1.4em] xl:w-[3em] xl:h-[3em]" />
+            }
+            name={"HTML"}
+          />
+          <SkillBar
+            image={
+              <FaSass className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  sm:w-[1.4em] sm:h-[1.4em] xl:w-[3em] xl:h-[3em]" />
+            }
+            name={"Sass"}
+          />
+          <SkillBar
+            image={
+              <FaBootstrap className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  sm:w-[1.4em] sm:h-[1.4em] xl:w-[3em] xl:h-[3em]" />
+            }
+            name={"Bootstrap"}
+          />
+          
+          <SkillBar
+            image={
+              <SiPostgresql className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  xl:w-[3em] xl:h-[3em]  sm:w-[1.4em] sm:h-[1.4em] " />
+            }
+            name={"PostgreSQL"}
+          />
         </div>
       </motion.div>
     </motion.div>
-    );
-    
-}
+  );
+};
 
-export default Skills
+export default Skills;
