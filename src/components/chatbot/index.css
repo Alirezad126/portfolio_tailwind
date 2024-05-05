@@ -10,7 +10,13 @@
     height: 500px;
     
 }
+.react-chatbot-kit-chat-message-container{
+    @media(max-width: 600px){
 
+        height: calc(75vh);
+        
+    }
+}
 .react-chatbot-kit-chat-header{
     background-color: #29165E;
     color: white;
