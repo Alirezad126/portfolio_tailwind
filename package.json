@@ -16,6 +16,8 @@
     "axios": "^1.6.8",
     "flowbite-react": "^0.9.0",
     "framer-motion": "^11.0.28",
+    "https": "^1.0.0",
+    "node-fetch": "^3.3.2",
     "react": "^18.2.0",
     "react-chat-elements": "^12.0.14",
     "react-chatbot-kit": "^2.2.2",
