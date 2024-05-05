@@ -2,7 +2,8 @@
     
     @media(max-width: 600px){
         width: 100vw;
-        height: 100vh;
+        height: calc(90vh);
+        
     }
 
     width: 500px;
@@ -48,7 +49,8 @@
     color: black;
     font-size: 16px;
     margin-left: 5px;
-    margin-top: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     border-top-left-radius: 0;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;

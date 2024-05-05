@@ -18,12 +18,11 @@ function ChatBot() {
   return (
     <div>
       {!open && (
-        <div className="fixed bottom-1 right-1 sm:bottom-5 sm:right-20 z-50 ">
+        <div className="fixed bottom-4 right-4 sm:bottom-5 sm:right-20 z-50">
           <div class="relative inline-flex  group">
-            <div class="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-full blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
             <button
               onClick={handleClick}
-              class="relative inline-flex items-center justify-center px-4 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-full"
+              class="relative inline-flex items-center justify-center px-4 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-full border-[1px] border-da border-gray-300"
               role="button"
             >
               <div className="flex items-center justify-center">

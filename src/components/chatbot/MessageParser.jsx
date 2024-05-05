@@ -9,7 +9,7 @@ class MessageParser {
   }
 
   async sendToAPI(messageText, state) {
-    const response = await fetch('http://44.218.144.150:8000/chat', {
+    const response = await fetch('https://44.196.239.182/chat', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

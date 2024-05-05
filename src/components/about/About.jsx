@@ -74,13 +74,13 @@ const About = () => {
           // whileInView="animate"
           className="flex flex-col
           gap-[1vh]
-          lg:flex-row lg:justify-around lg:gap-[10px] lg:m-0 z-10 rounded-32xl lg:border-[1px] lg:h-1/2 "
+          lg:flex-row lg:justify-around lg:gap-[10px] lg:m-0 z-10 rounded-2xl lg:border-[1px] lg:h-1/2 "
         >
           <div
             className="flex flex-col p-2
             gap-[2vh]
           md:gap-[10px] md:p-[10px] w-full 
-          lg:w-1/2 lg:gap-[20px] lg:p-[10px]"
+          lg:w-1/2 lg:gap-[20px] lg:p-[30px]"
           >
             <h1
               className="items-center text-[2.3vh]  
@@ -145,7 +145,7 @@ const About = () => {
             className="flex flex-col p-2
             gap-[2vh]
           md:gap-[10px] md:p-[10px] w-full 
-          lg:w-1/2 lg:gap-[20px] 2xl:p-[15px] lg:p-[10px]"
+          lg:w-1/2 lg:gap-[20px] lg:p-[30px]"
           >
             <h1
               className="items-center text-[2.3vh]
