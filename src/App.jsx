@@ -6,13 +6,17 @@ import About from "./components/about/About";
 import Skills from "./components/about/SkillsMobile";
 import Contact from "./components/contact/Contact";
 import Portfolio from "./components/projects/Portfolio";
+import ChatBot from "./components/chatbot/ChatBot";
+
 function App() {
   return (
     <div>
       <section id="Homepage">
         <Navbar />
         <Hero />
+        <ChatBot/>
       </section>
+
       <section id="Parallax">
         <Parallax />
       </section>

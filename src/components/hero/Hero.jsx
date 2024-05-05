@@ -75,7 +75,7 @@ const sliderVariants = {
 
 const Hero = () => {
   return (
-    <div style={{ height: 'calc(100vh - 100px)' }} className="overflow-hidden md:relative bg-gradient-to-b">
+    <div style={{ height: 'calc(100vh - 100px)' }} className="overflow-hidden md:relative bg-gradient-to-b z-10">
       <div className="h-[100%] mt-3 ml-[10%] mr-[10%]  
       sm:h-[80%]
       lg:max-w-[50%] lg:mt-[unset] ">
