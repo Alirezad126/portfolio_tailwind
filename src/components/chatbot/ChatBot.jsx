@@ -28,7 +28,7 @@ function ChatBot() {
               <div className="flex items-center justify-center">
                 <IoChatbubblesOutline className="hidden sm:block" size={45} />
                 <IoChatbubblesOutline className="sm:hidden" size={40} />
-                <p className="hidden sm:block sm:p-3 sm:text-xl">Chat with me</p>
+                <p className="hidden sm:block sm:p-3 sm:text-xl">Chatbot</p>
               </div>
             </button>
           </div>
@@ -54,7 +54,7 @@ function ChatBot() {
         <div>
           <Chatbot
             config={config}
-            headerText="Conversation with Alireza"
+            headerText="Conversation"
             messageParser={MessageParser}
             actionProvider={ActionProvider}
           />
