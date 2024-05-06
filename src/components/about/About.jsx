@@ -49,6 +49,7 @@ const About = () => {
           >
             About Me
           </h1>
+
         </motion.div>
 
         <div className="p-3">

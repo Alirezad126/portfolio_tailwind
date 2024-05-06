@@ -1,7 +1,9 @@
 import { useRef } from "react";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
-import ProjectOne from "./ProjectOne";
-import ProjectOneMobile from "./ProjectOneMobile";
+import ProjectOne from "./ProjectOne/ProjectOne";
+import ProjectTwo from "./ProjectTwo/ProjectTwo";
+import ProjectOneMobile from "./ProjectOne/ProjectOneMobile";
+import ProjectTwoMobile from "./ProjectTwo/ProjectTwoMobile";
 
 const Portfolio = () => {
   const ref = useRef();
@@ -26,15 +28,24 @@ const Portfolio = () => {
             h-[100px]
           sm:text-[2rem]
           lg:text-[2.5rem]
-          2xl:text-[4rem] text-center text-orange-400 md:text-[60px] font-bold ">
-        <h1>Projects</h1>
+          2xl:text-[4rem] text-center md:text-[60px] font-bold ">
+        <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span class=" text-orange-400">Projects</span></h1>
         <motion.div style={{ scaleX }} className="h-[10px] bg-white"></motion.div>
       </div>
       <div className="hidden xl:block">
       <ProjectOne />
       </div>
-      <div className="xl:hidden">
+      
+      <div className="xl:hidden bg-gradient-to-b">
       <ProjectOneMobile />
+      </div>
+      
+      <div className="hidden xl:block">
+      <ProjectTwo />
+      </div>
+
+      <div className="xl:hidden bg-gradient-to-a">
+      <ProjectTwoMobile/>
       </div>
     </div>
   );

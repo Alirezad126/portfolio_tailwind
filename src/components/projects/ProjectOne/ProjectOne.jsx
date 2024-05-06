@@ -81,8 +81,10 @@ const ProjectOne = () => {
                 alt=""
               />
             </div>
-            <div className="text-center w-3/5">
-              <h1 className="flex text-white font-bold text-[1.6vw]">
+
+            <div class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-full group bg-gradient-to-br from-yellow-500 to-orange-500 hover:from-yellow-400 hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
+              <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-full group-hover:bg-opacity-0">
+              <h1 className="flex items-center justify-center text-white font-bold text-[1.6vw]">
                 {item.title}
                 <motion.a
                   href="https://github.com/Alirezad126/PySnake"
@@ -93,7 +95,9 @@ const ProjectOne = () => {
                   <AiOutlineGithub className="w-10 h-10 sm:w-15 sm:h-15 " />
                 </motion.a>
               </h1>
+              </span>
             </div>
+
             <div className="w-full h-1/2 flex ">
               <Carousel />
             </div>
@@ -141,7 +145,7 @@ const ProjectOne = () => {
                   {imageURLLoading || (
                     <button
                       onClick={fetchImage}
-                      className="text-xl text-white p-[2vh] lg:p-[20px] border-none bg-orange-500 hover:bg-orange-400 cursor-pointer font-semibold shadow rounded-md transition ease-in-out duration-150"
+                      className="text-xl text-white p-[2vh] lg:p-[20px] border-none bg-gradient-to-br from-yellow-500 to-orange-500 hover:from-yellow-400 hover:to-orange-400 hover:text-white cursor-pointer font-semibold shadow rounded-md transition ease-in-out duration-150"
                     >
                       Send Request
                     </button>
@@ -149,7 +153,7 @@ const ProjectOne = () => {
                   {imageURLLoading && (
                     <button
                       type="button"
-                      class="inline-flex justify-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md text-white bg-orange-500 hover:bg-orange-400 transition ease-in-out duration-150 cursor-not-allowed"
+                      class="inline-flex justify-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md text-white bg-gradient-to-br from-yellow-500 to-orange-500 hover:from-yellow-400 hover:to-orange-400 hover:text-white transition ease-in-out duration-150 cursor-not-allowed"
                       disabled=""
                     >
                       <svg
@@ -190,7 +194,7 @@ const ProjectOne = () => {
                   onClick={() => {
                     setImageUrl(null);
                   }}
-                  className="text-xl text-white p-[2vh] lg:p-[20px] border-none bg-orange-500 hover:bg-orange-400 cursor-pointer font-semibold shadow rounded-md transition ease-in-out duration-150"
+                  className="text-xl text-white p-[2vh] lg:p-[20px] border-none bg-gradient-to-br from-cyan-500 to-blue-500 hover:from-cyan-300 hover:to-blue-300 hover:text-white cursor-pointer font-semibold shadow rounded-md transition ease-in-out duration-150"
                 >
                   Try again?
                 </button>

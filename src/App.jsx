@@ -27,7 +27,7 @@ function App() {
         <Skills />
       </section>
       <Portfolio />
-      <section id="Contact" className="bg-gradient-to-a sm:bg-gradient-to-b">
+      <section id="Contact" className="bg-gradient-to-b sm:bg-gradient-to-a">
         <Contact />
       </section>
     </div>
