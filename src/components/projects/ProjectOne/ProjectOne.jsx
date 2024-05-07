@@ -70,7 +70,7 @@ const ProjectOne = () => {
   };
 
   return (
-    <section>
+    <section className="h-[110vh]">
       <div className="flex justify-center items-end w-full h-full xl:pt-[150px]">
         <div className="w-4/5 h-full m-auto flex gap-[2vw] items-start">
           <div className="flex flex-col gap-3 h-4/5 w-2/3 justify-center items-center">

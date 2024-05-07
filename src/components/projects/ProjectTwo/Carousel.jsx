@@ -152,7 +152,7 @@ function Carousel() {
   };
 
   return (
-    <div className="w-full h-full m-auto py-5 px-5 relative overflow-hidden">
+    <div className="w-full h-full m-auto py-5 px-5 relative overflow-scroll">
       <div className="flex m-auto w-4/5 h-full duration-400 ">
         {slides[currentIndex].text}
       </div>
