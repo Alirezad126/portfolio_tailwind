@@ -20,7 +20,7 @@ function ProjectOneMobile() {
 
   const item = {
     id: 1,
-    title: "Reinforcement Learning Agent Playing PySnake Game",
+    title: "RL Agent Playing PySnake Game",
     img: "https://www.coolmathgames.com/sites/default/files/Snake_OG-logo.jpg",
     result:
       "https://github.com/Alirezad126/PySnake/blob/main/results/score_61.gif?raw=true",
@@ -155,7 +155,8 @@ function ProjectOneMobile() {
                 <p className="font-bold">
                   {" "}
                   Note: Exceeding about 20 cells may lead to prolonged
-                  processing, risking API timeout.(AWL Lambda is serverless and the code execution might take a bit longer)
+                  processing, risking API timeout.(AWL Lambda is serverless and
+                  the code execution might take a bit longer)
                 </p>
               </p>
               <form className="flex flex-1 flex-col gap-[2vh] items-center">
@@ -257,22 +258,25 @@ function ProjectOneMobile() {
 
   return (
     <section className="relative">
-      <div className="flex flex-col justify-center text-center m-auto w-4/5 h-3/7 pt-[100px]">
+      <div className="flex flex-col justify-center text-center items-center m-auto w-4/5 h-3/7 pt-[100px]">
         <img
           className="h-full w-3/5 md:w-1/2 m-auto rounded-xl object-fit "
           src={item.img}
           alt=""
         />
-        <h1 className="flex justify-center font-bold text-[2.2vh]">
-          {item.title}{" "}
-          <a
-            href="https://github.com/Alirezad126/PySnake"
-            target="_blank"
-            className=""
-          >
-            <AiOutlineGithub className="w-10 h-10 sm:w-15 sm:h-15 " />
-          </a>{" "}
-        </h1>
+
+        <div className="border mt-3 p-2 rounded-full border-orange-400">
+          <h1 className="flex justify-center font-bold text-[2vh]">
+            {item.title}{" "}
+            <a
+              href="https://github.com/Alirezad126/PySnake"
+              target="_blank"
+              className=""
+            >
+              <AiOutlineGithub className="w-7 h-7 sm:w-15 sm:h-15 " />
+            </a>{" "}
+          </h1>
+        </div>
       </div>
       <div className="w-4/5 h-2/3 m-auto py-5  relative overflow-hidden">
         <div className="text-[1.7vh]  w-4/5 m-auto">

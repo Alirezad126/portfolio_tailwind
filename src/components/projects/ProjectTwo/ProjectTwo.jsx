@@ -14,7 +14,7 @@ const ProjectTwo = () => {
       <div className="flex justify-center m-auto w-4/5 h-full xl:pt-[10px]">
         <div className="w-full h-full m-auto flex gap-[2vw] justify-center">
           <div className="flex flex-col gap-3 h-full w-full justify-center items-center">
-            <div className="w-full h-1/5 flex justify-center">
+            <div className="w-full h-1/5 flex justify-center pt-4">
               <img
                 className="w-2/5 h-full rounded-xl object-fit "
                 src={item.img}

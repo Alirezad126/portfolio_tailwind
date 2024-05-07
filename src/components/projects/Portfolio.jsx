@@ -29,7 +29,7 @@ const Portfolio = () => {
           sm:text-[2rem]
           lg:text-[2.5rem]
           2xl:text-[4rem] text-center md:text-[60px] font-bold ">
-        <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span class=" text-orange-400">Projects</span></h1>
+        <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-4xl lg:text-5xl"><span class=" text-orange-400">Projects</span></h1>
         <motion.div style={{ scaleX }} className="h-[10px] bg-white"></motion.div>
       </div>
       <div className="hidden xl:block">

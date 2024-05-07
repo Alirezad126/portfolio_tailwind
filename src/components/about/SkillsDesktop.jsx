@@ -112,7 +112,7 @@ const Skills = ({ variants }) => {
           />
           <div className="lg:w-1/4 flex flex-col gap-[5px] items-center ">
             <div>
-              <img className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  sm:w-[1.4em] sm:h-[1.4em] xl:w-[3em] xl:h-[3em]" src="https://cdn-lfs.huggingface.co/repos/96/a2/96a2c8468c1546e660ac2609e49404b8588fcf5a748761fa72c154b2836b4c83/533d195d96af7a2f996b2170c941e05698e8b270d29366f5e1f109d4ddf0bd55?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27hf-logo-pirate.svg%3B+filename%3D%22hf-logo-pirate.svg%22%3B&response-content-type=image%2Fsvg%2Bxml&Expires=1715188545&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcxNTE4ODU0NX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5odWdnaW5nZmFjZS5jby9yZXBvcy85Ni9hMi85NmEyYzg0NjhjMTU0NmU2NjBhYzI2MDllNDk0MDRiODU4OGZjZjVhNzQ4NzYxZmE3MmMxNTRiMjgzNmI0YzgzLzUzM2QxOTVkOTZhZjdhMmY5OTZiMjE3MGM5NDFlMDU2OThlOGIyNzBkMjkzNjZmNWUxZjEwOWQ0ZGRmMGJkNTU%7EcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj0qJnJlc3BvbnNlLWNvbnRlbnQtdHlwZT0qIn1dfQ__&Signature=ImixbutUQ9pR2CaLhDyED2iCXiHEuUibaUVlWAkv6diN5SciQgRtd7w%7EkxTZR2-wSKAs5mI7RUWM4k-kK3-MnH3YLq-1kBX1pb6hcyKGHm0pu6XxMceJXuGgPPJMXd8tGC-bgkSLu8hDLQ63fqmi%7Ell1dVfnLbTW5-3RQzqm%7E7vxb-eI7Wn1-LlssMNLawuf8tv%7EBScozIWI8z3GfUtDRdeYra6NkLp4tKtUZgrI9UZlr2erMhcdl%7EguBdHvgLiDb817q19NWqeURCWhyabGh4m6advZEMAChbYkxQURK3P5F43b1sfXMQmhsviHjF8GOFOLANxM9gkF7rxNMHfT7A__&Key-Pair-Id=KVTP0A1DKRTAX" />
+              <img className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  sm:w-[1.4em] sm:h-[1.4em] xl:w-[3em] xl:h-[3em]" src="./hf-logo.svg" />
             </div>
             <p className="text-[1.8vh] sm:text-[10px] md:text-[10px] lg:text-[15px]">
               HuggingFace

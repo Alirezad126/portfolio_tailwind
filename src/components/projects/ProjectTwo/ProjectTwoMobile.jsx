@@ -142,16 +142,18 @@ function ProjectTwoMobile() {
           src={item.img}
           alt=""
         />
-        <h1 className="flex justify-center font-bold text-[2.2vh] items-center">
+        <div className="border mt-3 p-2 rounded-full border-orange-400">
+        <h1 className="flex justify-center font-bold text-[1.7vh] items-center">
           {item.title}{" "}
           <a
             href="https://github.com/Alirezad126/PySnake"
             target="_blank"
             className=""
           >
-            <AiOutlineGithub className="w-10 h-10 sm:w-15 sm:h-15 " />
+            <AiOutlineGithub className="w-8 h-8 sm:w-15 sm:h-15 " />
           </a>{" "}
         </h1>
+        </div>
       </div>
 
       <div className="w-5/6 h-2/3 m-auto py-5  relative overflow-hidden">
