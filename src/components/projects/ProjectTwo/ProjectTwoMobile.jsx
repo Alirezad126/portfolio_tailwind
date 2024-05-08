@@ -146,7 +146,7 @@ function ProjectTwoMobile() {
         <h1 className="flex justify-center font-bold text-[1.7vh] items-center">
           {item.title}{" "}
           <a
-            href="https://github.com/Alirezad126/PySnake"
+            href="https://github.com/Alirezad126/RAGBot"
             target="_blank"
             className=""
           >

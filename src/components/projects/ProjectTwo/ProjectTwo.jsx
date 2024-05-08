@@ -10,8 +10,8 @@ const item = {
 
 const ProjectTwo = () => {
   return (
-    <section>
-      <div className="flex justify-center m-auto w-4/5 h-full xl:pt-[50px]">
+    <section className="h-[120vh]">
+      <div className="flex justify-center m-auto max-w-[1500px] h-full xl:pt-[50px]">
         <div className="w-full h-full m-auto flex gap-[2vw] justify-center">
           <div className="flex flex-col gap-3 h-full w-full justify-center items-center">
             <div className="w-full h-1/5 flex justify-center pt-4">
@@ -37,7 +37,7 @@ const ProjectTwo = () => {
               </span>
             </div>
 
-            <div className="w-full h-1/2 flex ">
+            <div className="w-full h-2/3 flex ">
               <Carousel />
             </div>
           </div>

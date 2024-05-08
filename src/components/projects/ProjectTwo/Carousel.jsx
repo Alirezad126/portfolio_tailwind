@@ -11,7 +11,7 @@ function Carousel() {
       text: (
         <div>
           <p className="font-extrabold text-3xl text-orange-400">Description</p>
-          <p className="font-light text-[1.2vw] text-[#9e9e9e] text-justify">
+          <p className="font-light text-[1vw] text-[#9e9e9e] text-justify">
             This project involves the development of a personalized chatbot that
             serves as a virtual representation of myself. Utilizing the latest
             advancements in AI, the chatbot is built using LangChain and
@@ -36,7 +36,7 @@ function Carousel() {
 
           <div className="flex flex-col gap-4">
             <div className="text-[#9e9e9e]">
-              <p className="font-light text-xl  ">
+              <p className="font-light text-[1.1vw]  ">
                 <TbPoint className="inline " />
                 <b className="font-bold text-[#ffffff]">
                   Document Processing and Data Preparation
@@ -44,13 +44,13 @@ function Carousel() {
               </p>
 
               <ol>
-                <li className="pl-[50px] text-[1.2vw] text-justify ">
+                <li className="pl-[50px] text-[1vw] text-justify ">
                   <b>PDF Processing:</b> The system begins by extracting text
                   from a PDF file, likely containing your thesis or other
                   significant documents. This text is formatted for usability.
                 </li>
 
-                <li className="pl-[50px] text-[1.2vw] text-justify">
+                <li className="pl-[50px] text-[1vw] text-justify">
                   <b>Text Chunking:</b> The extracted text is segmented into
                   smaller chunks. This step ensures that the data can be
                   effectively converted into vectors, which are manageable in
@@ -60,20 +60,20 @@ function Carousel() {
             </div>
 
             <div className=" text-[#9e9e9e]">
-              <p className="font-light text-xl text-[#ffffff] ">
+              <p className="font-light text-[1.1vw] text-[#ffffff] ">
                 <TbPoint className="inline" />
                 <b className="font-bold ">Building the Vector Database</b>
               </p>
 
               <ol>
-                <li className="pl-[50px] text-[1.2vw] text-justify">
+                <li className="pl-[50px] text-[1vw] text-justify">
                   <b>Text Embedding:</b> Each text chunk is transformed into a
                   numerical vector using an embedding model. These vectors
                   capture the semantic essence of the text, facilitating
                   content-based retrieval.
                 </li>
 
-                <li className="pl-[50px] text-[1.2vw] text-justify">
+                <li className="pl-[50px] text-[1vw] text-justify">
                   <b>Vector Storage:</b> The vectors are stored in a vector
                   database designed for fast retrieval based on semantic
                   similarity, setting the foundation for the chatbot's
@@ -95,7 +95,7 @@ function Carousel() {
 
           <div className="flex flex-col gap-4 ">
             <div className=" text-[#9e9e9e] ">
-              <p className="font-light text-xl text-[#ffffff] ">
+              <p className="font-light text-[1.1vw] text-[#ffffff] ">
                 <TbPoint className="inline" />
                 <b className="font-bold ">Chatbot Interaction</b>
               </p>
@@ -159,14 +159,14 @@ function Carousel() {
       {/* Left Arrow */}
       <div
         onClick={prevSlide}
-        className="absolute top-[50%] -translate-x-0 translate-y-[-50%] left-0 text-xl rounded-full p-2 bg-white/20 text-white cursor-pointer"
+        className="absolute top-[50%] -translate-x-0 translate-y-[-50%] left-0 text-[1.1vw] rounded-full p-2 bg-white/20 text-white cursor-pointer"
       >
         <BsChevronCompactLeft size={30} />
       </div>
       {/* Rigth Arrow */}
       <div
         onClick={nextSlide}
-        className="absolute top-[50%] -translate-x-0 translate-y-[-50%] right-0 text-xl rounded-full p-2 bg-white/20 text-white cursor-pointer"
+        className="absolute top-[50%] -translate-x-0 translate-y-[-50%] right-0 text-[1.1vw] rounded-full p-2 bg-white/20 text-white cursor-pointer"
       >
         <BsChevronCompactRight size={30} />
       </div>
