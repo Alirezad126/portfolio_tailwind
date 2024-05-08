@@ -27,5 +27,5 @@ html {
   
   section {
     height: 100vh;
-    scroll-snap-align: center;
+    scroll-snap-align: start;
   }

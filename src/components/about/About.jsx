@@ -34,22 +34,21 @@ const About = () => {
           // variants={variants}
           // initial="initial"
           // whileInView="animate"
-          className="top-0 left-0   font-extrabold text-center"
+          className="top-0 left-0   font-extrabold text-center pt-10
+          pb-5
+          sm:pb-0
+          md:pb-5"
         >
           <h1
             className="text-orange-400 
             text-[2rem]
-            pt-5
-            pb-10
-            sm:pb-0
-            md:pb-5
+            
           sm:text-[2rem]
           lg:text-[2.5rem]
           2xl:text-[4rem] "
           >
             About Me
           </h1>
-
         </motion.div>
 
         <div className="p-3">
@@ -62,10 +61,10 @@ const About = () => {
             of Machine Learning Researcher at Concordia University and served as
             a Junior Data Scientist at IranBarNet. In the latter role, I
             enhanced logistics efficiency by optimizing shipping and driving
-            routes 📊 <br/> I love simplifying complex challenges into effective
-            solutions and I'll occasionally share insights from my live projects
-            right here—so stay tuned! If you’re interested in making a
-            difference with technology, let’s connect! 🌟
+            routes 📊 <br /> I love simplifying complex challenges into
+            effective solutions and I'll occasionally share insights from my
+            live projects right here—so stay tuned! If you’re interested in
+            making a difference with technology, let’s connect! 🌟
           </p>
         </div>
 
@@ -209,6 +208,20 @@ const About = () => {
             </motion.div>
           </div>
         </motion.div>
+        <div>
+        <h1
+            className="text-orange-400 
+            hidden
+            sm:block
+          sm:text-[2rem]
+          lg:text-[2.5rem]
+          2xl:text-[4rem]
+          text-center
+          font-bold"
+          >
+            Skills
+          </h1>
+        </div>
         <SkillsDesktop />
       </div>
     </motion.div>

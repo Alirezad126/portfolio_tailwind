@@ -22,7 +22,7 @@ function ChatBot() {
           <div class="relative inline-flex  group">
             <button
               onClick={handleClick}
-              class="relative inline-flex items-center justify-center px-4 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-full border-[1px] border-da border-gray-300"
+              class="relative inline-flex items-center justify-center px-4 py-4 text-lg font-bold text-black bg-gradient-to-br from-yellow-500 to-orange-500 hover:from-yellow-400 hover:to-orange-400 hover:text-white cursor-pointer shadow rounded-full transition ease-in-out duration-150"
               role="button"
             >
               <div className="flex items-center justify-center">

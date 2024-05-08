@@ -2,8 +2,6 @@ import { useState } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { TbPoint } from "react-icons/tb";
 import List from "@mui/material/List";
-import { ListItem } from "flowbite-react";
-import { ListItemText } from "@mui/material";
 
 function Carousel() {
   const slides = [
@@ -36,7 +34,7 @@ function Carousel() {
 
           <div className="flex flex-col gap-4">
             <div className="text-[#9e9e9e]">
-              <p className="font-light text-[1.1vw]  ">
+              <p className="font-light text-[1vw]  ">
                 <TbPoint className="inline " />
                 <b className="font-bold text-[#ffffff]">
                   Document Processing and Data Preparation
@@ -60,7 +58,7 @@ function Carousel() {
             </div>
 
             <div className=" text-[#9e9e9e]">
-              <p className="font-light text-[1.1vw] text-[#ffffff] ">
+              <p className="font-light text-[1vw] text-[#ffffff] ">
                 <TbPoint className="inline" />
                 <b className="font-bold ">Building the Vector Database</b>
               </p>
@@ -95,26 +93,26 @@ function Carousel() {
 
           <div className="flex flex-col gap-4 ">
             <div className=" text-[#9e9e9e] ">
-              <p className="font-light text-[1.1vw] text-[#ffffff] ">
+              <p className="font-light text-[1vw] text-[#ffffff] ">
                 <TbPoint className="inline" />
                 <b className="font-bold ">Chatbot Interaction</b>
               </p>
 
               <ol>
-                <li className="pl-[50px] text-[1.1vw] text-justify">
+                <li className="pl-[50px] text-[1vw] text-justify">
                   <b className="text-[#ffffff]">Query Handling:</b> User queries are converted into vectors
                   similarly. These query vectors are used to fetch semantically
                   related text chunks from the vector database.
                 </li>
 
-                <li className="pl-[50px] text-[1.1vw] text-justify">
+                <li className="pl-[50px] text-[1vw] text-justify">
                   <b className="text-[#ffffff]">Retrieval-Augmented Generation (RAG):</b> The chatbot
                   employs a RAG approach to both retrieve relevant text and
                   generate coherent responses. This ensures answers are not only
                   contextually accurate but also conversationally appropriate.
                 </li>
 
-                <li className="pl-[50px] text-[1.1vw]">
+                <li className="pl-[50px] text-[1vw]">
                   <b className="text-[#ffffff]">Using History-Aware Retrieval:</b> This system stores the
                   history of the conversation—keeping track of both questions
                   and responses. It then uses this history to reformulate
@@ -125,8 +123,8 @@ function Carousel() {
                   for precise retrieval and response generation that's deeply
                   integrated with the conversation's context.
                 </li>
-                <li className="pl-[50px] text-[1.1vw]">
-                  <b>Response Generation and Delivery:</b> Finally, the chatbot
+                <li className="pl-[50px] text-[1vw]">
+                  <b className="text-[#ffffff]">Response Generation and Delivery:</b> Finally, the chatbot
                   generates a response based on the retrieved data and the
                   re-contextualized query. This response is then delivered to
                   the user, completing the interaction loop.
@@ -159,14 +157,14 @@ function Carousel() {
       {/* Left Arrow */}
       <div
         onClick={prevSlide}
-        className="absolute top-[50%] -translate-x-0 translate-y-[-50%] left-0 text-[1.1vw] rounded-full p-2 bg-white/20 text-white cursor-pointer"
+        className="absolute top-[50%] -translate-x-0 translate-y-[-50%] left-0 text-[1vw] rounded-full p-2 bg-white/20 text-white cursor-pointer"
       >
         <BsChevronCompactLeft size={30} />
       </div>
       {/* Rigth Arrow */}
       <div
         onClick={nextSlide}
-        className="absolute top-[50%] -translate-x-0 translate-y-[-50%] right-0 text-[1.1vw] rounded-full p-2 bg-white/20 text-white cursor-pointer"
+        className="absolute top-[50%] -translate-x-0 translate-y-[-50%] right-0 text-[1vw] rounded-full p-2 bg-white/20 text-white cursor-pointer"
       >
         <BsChevronCompactRight size={30} />
       </div>

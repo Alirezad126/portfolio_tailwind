@@ -26,16 +26,16 @@ const Skills = ({ variants }) => {
       variants={variants}
       initial="initial"
       whileInView="animate"
-      className="hidden sm:flex lg:pt-[30px]  md:pt-[10px] lg:pb-[10px] justify-between p-6"
+      className="hidden sm:flex lg:pt-[30px]  md:pt-[10px] lg:pb-[10px] justify-between p-6 border-[0.5px] rounded-2xl"
     >
       <motion.div
         initial="initial"
         whileInView="animate"
-        whileHover={{ background: "lightgray", color: "black" }}
-        className="flex flex-col items-center gap-[10px] border-[0.5px] rounded-xl w-1/5 lg:h-full h-4/5 lg:p-[20px] p-[10px] mb-[10px]  "
+        
+        className="flex flex-col items-center gap-[10px] rounded-xl w-1/4 lg:h-full h-4/5 lg:p-[20px] p-[10px] mb-[10px]  "
       >
         <div className="lg:mb-10px md:text-center md:text-[15px] lg:text-[20px] sm:text-[0.8rem]">
-          <h2>Programming</h2>
+          <h2 className="font-bold">Programming</h2>
         </div>
         <div className="flex sm:flex-col lg:flex-row lg:gap-[20px] lg:h-[unset] lg:justify-center gap-[5px] flex-wrap h-3/4 w-full">
           <SkillBar
@@ -79,13 +79,13 @@ const Skills = ({ variants }) => {
       <motion.div
         initial="initial"
         whileInView="animate"
-        whileHover={{ background: "lightgray", color: "black" }}
-        className="flex flex-col items-center gap-[10px] border-[0.5px] rounded-xl w-1/5 lg:h-full h-4/5 lg:p-[20px] p-[10px] mb-[10px] "
+        
+        className="flex flex-col items-center gap-[10px] rounded-xl w-1/4 lg:h-full h-4/5 lg:p-[20px] p-[10px] mb-[10px] "
       >
         <div className="lg:mb-10px md:text-center md:text-[15px] lg:text-[20px] sm:text-[0.8rem]">
-          <h2>Machine Learning</h2>
+          <h2 className="font-bold">Machine Learning</h2>
         </div>
-        <div className="flex sm:flex-col lg:flex-row lg:gap-[20px] lg:h-[unset] lg:justify-center gap-[5px] flex-wrap h-3/4 w-full">
+        <div className="flex sm:flex-col lg:flex-row lg:gap-[25px] lg:h-[unset] lg:justify-center gap-[5px] flex-wrap h-3/4 w-full">
           <SkillBar
             image={
               <SiPytorch className="lg:w-[2em] lg:h-[2em] md:w-[30px] md:h-[30px]  sm:w-[1.4em] sm:h-[1.4em] xl:w-[3em] xl:h-[3em] " />
@@ -131,11 +131,11 @@ const Skills = ({ variants }) => {
       <motion.div
         initial="initial"
         whileInView="animate"
-        whileHover={{ background: "lightgray", color: "black" }}
-        className="flex flex-col items-center gap-[10px] border-[0.5px] rounded-xl w-1/5 lg:h-full h-4/5 lg:p-[20px] p-[10px] mb-[10px] "
+        
+        className="flex flex-col items-center gap-[10px] rounded-xl w-1/4 lg:h-full h-4/5 lg:p-[20px] p-[10px] mb-[10px] "
       >
         <div className="lg:mb-10px md:text-center md:text-[15px] lg:text-[20px] sm:text-[0.8rem]">
-          <h2>MLOps</h2>
+          <h2 className="font-bold">MLOps</h2>
         </div>
 
         <div className="flex sm:flex-col lg:flex-row lg:gap-[20px] lg:h-[unset] lg:justify-center gap-[5px] flex-wrap h-3/4 w-full">
@@ -175,11 +175,11 @@ const Skills = ({ variants }) => {
       <motion.div
         initial="initial"
         whileInView="animate"
-        whileHover={{ background: "lightgray", color: "black" }}
-        className="flex flex-col items-center gap-[10px] border-[0.5px] rounded-xl w-1/5 lg:h-full h-4/5 lg:p-[20px] p-[10px] mb-[10px] "
+        
+        className="flex flex-col items-center gap-[10px] rounded-xl w-1/4 lg:h-full h-4/5 lg:p-[20px] p-[10px] mb-[10px] "
       >
         <div className="lg:mb-10px md:text-center md:text-[15px] lg:text-[20px] sm:text-[0.8rem]">
-          <h2>Web Development</h2>
+          <h2 className="font-bold">Web Development</h2>
         </div>
         <div className="flex sm:flex-col lg:flex-row lg:gap-[20px] lg:h-[unset] lg:justify-center gap-[5px] flex-wrap h-3/4 w-full  ">
           <SkillBar
