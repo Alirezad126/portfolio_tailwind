@@ -70,7 +70,7 @@ const ProjectOne = () => {
   };
 
   return (
-    <section className="h-[110vh]">
+    <section className="h-[110vh] ">
       <div className="flex justify-center items-end w-full h-full xl:pt-[150px]">
         <div className="w-4/5 h-full m-auto flex gap-[2vw] items-start">
           <div className="flex flex-col gap-3 h-4/5 w-2/3 justify-center items-center">
@@ -105,17 +105,17 @@ const ProjectOne = () => {
 
           <div className="flex flex-col gap-3 h-3/4 w-1/3 p-[30px] items-center">
             {imageURL !== null || (
-              <div className="text-center w-4/5 flex flex-col gap-5">
+              <div className="text-center w-4/5 flex flex-col gap-5 m-auto">
                 <h1 className="text-white font-bold text-[1.4vw]">
                   Try it Online
                 </h1>
-                <p className="text-[1vw] text-start">
+                <p className="text-[0.9vw] text-start">
                 Enter X and Y axis cell numbers for processing. The model, on
                 AWS Lambda's serverless platform, will play the game and display
                 the GIF response (Coool right ?!). <br />{" "}
-                <p className="font-bold text-[1vw]">
+                <p className="font-bold text-[0.9vw]">
                   Note: Exceeding about 20 cells may lead to prolonged
-                  processing, risking API timeout. (AWL Lambda is serverless and the code execution might take a bit longer)
+                  processing, risking API timeout. (AWS Lambda is serverless and the code execution might take a bit longer)
                 </p>
                 </p>
                 <form className="flex flex-1 flex-col gap-[2vh]">

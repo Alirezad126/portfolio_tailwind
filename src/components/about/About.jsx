@@ -22,7 +22,7 @@ const variants = {
 
 const About = () => {
   return (
-    <motion.div className="bg-scroll bg-gradient-to-b h-full flex flex-col items-center">
+    <motion.div className="bg-scroll bg-gradient-to-b h-full flex max-w-[1600px] m-auto flex-col items-center">
       <div
         className="flex flex-col lg:max-w-[1200px] 2xl:max-w-[80%] justify-center w-full
         
