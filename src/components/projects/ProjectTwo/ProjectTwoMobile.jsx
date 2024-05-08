@@ -38,7 +38,7 @@ function ProjectTwoMobile() {
           <p className="font-light text-gray-400 text-[1.9vh]">
             {" "}
             <TbPoint className="inline" />{" "}
-            <b className="font-bold text-[1.7vh]">Document Processing</b> The
+            <b className="font-bold text-[#ffffff] text-[1.7vh]">Document Processing</b> The
             system begins by extracting text from a PDF file, likely containing
             your thesis or other significant documents. This text is formatted
             for usability.
@@ -46,7 +46,7 @@ function ProjectTwoMobile() {
           <p className="font-light text-gray-400">
             {" "}
             <TbPoint className="inline" />{" "}
-            <b className="font-bold">Text Chunking:</b> The extracted text is
+            <b className="font-bold text-[#ffffff]">Text Chunking:</b> The extracted text is
             segmented into smaller chunks. This step ensures that the data can
             be effectively converted into vectors, which are manageable in size
             and semantically rich.
@@ -54,7 +54,7 @@ function ProjectTwoMobile() {
           <p className="font-light text-gray-400">
             {" "}
             <TbPoint className="inline" />{" "}
-            <b className="font-bold">Building the Vector Database</b> Each text
+            <b className="font-bold text-[#ffffff]">Building the Vector Database</b> Each text
             chunk is transformed into a numerical vector using an embedding
             model. These vectors capture the semantic essence of the text,
             facilitating content-based retrieval.
@@ -69,7 +69,7 @@ function ProjectTwoMobile() {
           <p className="font-light text-gray-400">
             {" "}
             <TbPoint className="inline" />{" "}
-            <b className="font-bold">Vector Storage:</b> The vectors are stored
+            <b className="font-bold text-[#ffffff]">Vector Storage:</b> The vectors are stored
             in a vector database designed for fast retrieval based on semantic
             similarity, setting the foundation for the chatbot's information
             retrieval capabilities.
@@ -77,7 +77,7 @@ function ProjectTwoMobile() {
           <p className="font-light text-gray-400">
             {" "}
             <TbPoint className="inline" />{" "}
-            <b className="font-bold">Query Handling:</b> User queries are
+            <b className="font-bold text-[#ffffff]">Query Handling:</b> User queries are
             converted into vectors similarly. These query vectors are used to
             fetch semantically related text chunks from the vector database.
           </p>
@@ -85,7 +85,7 @@ function ProjectTwoMobile() {
           <p className="font-light text-gray-400">
             {" "}
             <TbPoint className="inline" />{" "}
-            <b className="font-bold">Retrieval-Augmented Generation (RAG)</b>{" "}
+            <b className="font-bold text-[#ffffff]">Retrieval-Augmented Generation (RAG)</b>{" "}
             The chatbot employs a RAG approach to both retrieve relevant text
             and generate coherent responses. This ensures answers are not only
             contextually accurate but also conversationally appropriate.
@@ -101,7 +101,7 @@ function ProjectTwoMobile() {
           <p className="font-light text-gray-400">
             {" "}
             <TbPoint className="inline" />{" "}
-            <b className="font-bold">Using History-Aware Retrieval:</b> This
+            <b className="font-bold text-[#ffffff]">Using History-Aware Retrieval:</b> This
             system stores the history of the conversation—keeping track of both
             questions and responses. It then uses this history to reformulate
             incoming questions, ensuring they can be understood and responded to
@@ -113,7 +113,7 @@ function ProjectTwoMobile() {
           <p className="font-light text-gray-400">
             {" "}
             <TbPoint className="inline" />{" "}
-            <b className="font-bold">Response Generation and Delivery:</b>{" "}
+            <b className="font-bold text-[#ffffff]">Response Generation and Delivery:</b>{" "}
             Finally, the chatbot generates a response based on the retrieved
             data and the re-contextualized query. This response is then
             delivered to the user, completing the interaction loop.
@@ -142,7 +142,7 @@ function ProjectTwoMobile() {
           src={item.img}
           alt=""
         />
-        <div className="border mt-3 p-2 rounded-full border-orange-400">
+        <div className="border mt-3 m-auto p-2 rounded-full border-orange-400">
         <h1 className="flex justify-center font-bold text-[1.7vh] items-center">
           {item.title}{" "}
           <a

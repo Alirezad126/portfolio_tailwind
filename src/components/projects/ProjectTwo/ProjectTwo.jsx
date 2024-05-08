@@ -10,8 +10,8 @@ const item = {
 
 const ProjectTwo = () => {
   return (
-    <section className="h-[120vh]">
-      <div className="flex justify-center m-auto max-w-[1500px] h-full xl:pt-[50px]">
+    <section className="h-[110vh]">
+      <div className="flex justify-center m-auto max-w-[1300px] h-full xl:pt-[100px]">
         <div className="w-full h-full m-auto flex gap-[2vw] justify-center">
           <div className="flex flex-col gap-3 h-full w-full justify-center items-center">
             <div className="w-full h-1/5 flex justify-center pt-4">

@@ -45,13 +45,13 @@ function Carousel() {
 
               <ol>
                 <li className="pl-[50px] text-[1vw] text-justify ">
-                  <b>PDF Processing:</b> The system begins by extracting text
+                  <b className="text-[#ffffff]">PDF Processing:</b> The system begins by extracting text
                   from a PDF file, likely containing your thesis or other
                   significant documents. This text is formatted for usability.
                 </li>
 
                 <li className="pl-[50px] text-[1vw] text-justify">
-                  <b>Text Chunking:</b> The extracted text is segmented into
+                  <b className="text-[#ffffff]">Text Chunking:</b> The extracted text is segmented into
                   smaller chunks. This step ensures that the data can be
                   effectively converted into vectors, which are manageable in
                   size and semantically rich.
@@ -67,14 +67,14 @@ function Carousel() {
 
               <ol>
                 <li className="pl-[50px] text-[1vw] text-justify">
-                  <b>Text Embedding:</b> Each text chunk is transformed into a
+                  <b className="text-[#ffffff]">Text Embedding:</b> Each text chunk is transformed into a
                   numerical vector using an embedding model. These vectors
                   capture the semantic essence of the text, facilitating
                   content-based retrieval.
                 </li>
 
                 <li className="pl-[50px] text-[1vw] text-justify">
-                  <b>Vector Storage:</b> The vectors are stored in a vector
+                  <b className="text-[#ffffff]">Vector Storage:</b> The vectors are stored in a vector
                   database designed for fast retrieval based on semantic
                   similarity, setting the foundation for the chatbot's
                   information retrieval capabilities.
@@ -102,20 +102,20 @@ function Carousel() {
 
               <ol>
                 <li className="pl-[50px] text-[1.1vw] text-justify">
-                  <b>Query Handling:</b> User queries are converted into vectors
+                  <b className="text-[#ffffff]">Query Handling:</b> User queries are converted into vectors
                   similarly. These query vectors are used to fetch semantically
                   related text chunks from the vector database.
                 </li>
 
                 <li className="pl-[50px] text-[1.1vw] text-justify">
-                  <b>Retrieval-Augmented Generation (RAG):</b> The chatbot
+                  <b className="text-[#ffffff]">Retrieval-Augmented Generation (RAG):</b> The chatbot
                   employs a RAG approach to both retrieve relevant text and
                   generate coherent responses. This ensures answers are not only
                   contextually accurate but also conversationally appropriate.
                 </li>
 
                 <li className="pl-[50px] text-[1.1vw]">
-                  <b>Using History-Aware Retrieval:</b> This system stores the
+                  <b className="text-[#ffffff]">Using History-Aware Retrieval:</b> This system stores the
                   history of the conversation—keeping track of both questions
                   and responses. It then uses this history to reformulate
                   incoming questions, ensuring they can be understood and
