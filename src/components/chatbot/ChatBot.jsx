@@ -1,6 +1,6 @@
 import { Chatbot } from "react-chatbot-kit";
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion} from "framer-motion";
 import config from "./config";
 import MessageParser from "./MessageParser";
 import ActionProvider from "./ActionProvider";
@@ -35,7 +35,6 @@ function ChatBot() {
           animate={{ opacity: 1, x: 0, y: 0 }}
           transition={{ duration: 1 }}
         >
-          <AnimatePresence>
             {show && (
               <motion.div
                 initial={{ opacity: 0, x: 100, y: 100 }}
@@ -57,7 +56,6 @@ function ChatBot() {
                 </button>
               </motion.div>
             )}
-          </AnimatePresence>
           <div class="relative inline-flex  group">
             <button
               onClick={handleClick}
