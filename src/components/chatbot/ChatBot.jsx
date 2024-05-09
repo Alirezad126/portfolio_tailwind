@@ -14,8 +14,14 @@ function ChatBot() {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
-    return () => setTimeout(() => setShow(true), 3000);
-  },[]);
+    const showTimer = setTimeout(() => setShow(true), 3000);
+    const hideTimer = setTimeout(() => setShow(false), 10000);
+
+    return () => {
+      clearTimeout(showTimer);
+      clearTimeout(hideTimer);
+    };
+  }, []);
 
   const handleClick = () => {
     setOpen(!open);
