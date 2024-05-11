@@ -22,7 +22,7 @@ const variants = {
 
 const About = () => {
   return (
-    <motion.div className="bg-scroll bg-gradient-to-b h-full flex max-w-[1600px] m-auto flex-col items-center">
+    <motion.div className="bg-scroll h-full flex max-w-[1600px] m-auto flex-col items-center">
       <div
         className="flex flex-col lg:max-w-[1200px] 2xl:max-w-[80%] justify-center w-full
         
@@ -51,20 +51,27 @@ const About = () => {
           </h1>
         </motion.div>
 
-        <div className="p-3">
-          <p className="text-[1.8vh] md:text-[1rem] 2xl:text-[1.2rem] text-justify">
-            Hi there! 👋 <br /> I’m Alireza. I recently completed my Master’s in
-            Building Engineering at Concordia University and hold a Bachelor's
-            degree in Mechanical Engineering from Iran University of Science and
-            Technology. I’m passionate about using artificial intelligence to
-            enhance our daily spaces 🚀. <br /> Previously, I held the position
-            of Machine Learning Researcher at Concordia University and served as
-            a Junior Data Scientist at IranBarNet. In the latter role, I
-            enhanced logistics efficiency by optimizing shipping and driving
-            routes 📊 <br /> I love simplifying complex challenges into
-            effective solutions and I'll occasionally share insights from my
-            live projects right here—so stay tuned! If you’re interested in
-            making a difference with technology, let’s connect! 🌟
+        <div
+          href="#"
+          class="block p-6 m-5 sm:p-6 sm:m-0 w-fu border border-gray-500 rounded-lg shadow "
+        >
+          <h5 class="mb-2 text-[2.3vh]
+              lg:text-[1.5rem] 2xl:text-[2rem] text-center font-bold tracking-tight text-white dark:text-white">
+            Hi there! 👋 I’m Alireza:
+          </h5>
+          <p class="text-justify text-[1.8vh] md:text-[0.9rem] lg:text-[1rem] 2xl:text-[1.5rem] font-normal text-white ">
+            I recently completed my Master’s in Building Engineering at
+            Concordia University and hold a Bachelor's degree in Mechanical
+            Engineering from Iran University of Science and Technology. I’m
+            passionate about using artificial intelligence to enhance our daily
+            spaces 🚀. <br /> <br /> Previously, I held the position of Machine
+            Learning Researcher at Concordia University and served as a Junior
+            Data Scientist at IranBarNet. In the latter role, I enhanced
+            logistics efficiency by optimizing shipping and driving routes 📊{" "}
+            <br /> <br /> I love simplifying complex challenges into effective
+            solutions and I'll occasionally share insights from my live projects
+            right here—so stay tuned! If you’re interested in making a
+            difference with technology, let’s connect! 🌟
           </p>
         </div>
 
@@ -74,7 +81,7 @@ const About = () => {
           // whileInView="animate"
           className="flex flex-col
           gap-[1vh]
-          lg:flex-row lg:justify-around lg:gap-[10px] lg:m-0 z-10 rounded-2xl lg:border-[1px] lg:h-1/2 "
+          lg:flex-row lg:justify-around lg:gap-[10px] lg:m-0 z-10 rounded-2xl lg:border-[1px] lg:h-1/2 border-gray-500 "
         >
           <div
             className="flex flex-col p-2
@@ -209,7 +216,7 @@ const About = () => {
           </div>
         </motion.div>
         <div>
-        <h1
+          <h1
             className="text-orange-400 
             hidden
             sm:block

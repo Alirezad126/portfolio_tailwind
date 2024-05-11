@@ -49,7 +49,7 @@ const Skills = ({variants}) => {
         initial="initial"
         whileInView="animate"
         whileHover={{ background: "lightgray", color: "black" }}
-        className="flex flex-col items-center gap-[10px] border-[0.5px] rounded-xl w-5/6 h-1/4 m-auto p-[8px]"
+        className="flex flex-col items-center gap-[10px] border-[0.5px] rounded-xl w-5/6 h-1/4 m-auto p-[8px] border-gray-500"
       >
         <div className="text-center text-[2.4vh] font-bold" >
           <h2>Programming Languages</h2>
@@ -82,7 +82,7 @@ const Skills = ({variants}) => {
         initial="initial"
         whileInView="animate"
         whileHover={{ background: "lightgray", color: "black" }}
-        className="flex flex-col items-center gap-[10px] border-[0.5px] rounded-xl w-5/6 h-1/4 m-auto p-[8px] "
+        className="flex flex-col items-center gap-[10px] border-[0.5px] rounded-xl w-5/6 h-1/4 m-auto p-[8px] border-gray-500 "
       >
         <div className="text-center text-[2.4vh] font-bold">
           <h2>Machine Learning</h2>
@@ -108,7 +108,7 @@ const Skills = ({variants}) => {
         initial="initial"
         whileInView="animate"
         whileHover={{ background: "lightgray", color: "black" }}
-        className="flex flex-col items-center gap-[10px] border-[0.5px] rounded-xl w-5/6 h-1/4 m-auto p-[8px] "
+        className="flex flex-col items-center gap-[10px] border-[0.5px] rounded-xl w-5/6 h-1/4 m-auto p-[8px] border-gray-500 "
       >
         <div className="text-center text-[2.4vh] font-bold">
           <h2>MLOps</h2>
@@ -127,7 +127,7 @@ const Skills = ({variants}) => {
         initial="initial"
         whileInView="animate"
         whileHover={{ background: "lightgray", color: "black" }}
-        className="flex flex-col items-center gap-[10px] border-[0.5px] rounded-xl w-5/6 h-1/4 m-auto p-[8px] "
+        className="flex flex-col items-center gap-[10px] border-[0.5px] rounded-xl w-5/6 h-1/4 m-auto p-[8px] border-gray-500 "
       >
         <div className="text-center text-[2.4vh] font-bold">
           <h2>Web Development</h2>

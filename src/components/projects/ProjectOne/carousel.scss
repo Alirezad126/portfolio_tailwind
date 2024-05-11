@@ -1,0 +1,23 @@
+.carousel:-webkit-scrollbar {
+  display: none;
+}
+.carousel {
+  width: 100%;
+  border-radius: 1rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: flex;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  
+  
+}
+
+.carousel div {
+  flex: 0 0 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative; /* changed from sticky to relative */
+  scroll-snap-align: start;
+}

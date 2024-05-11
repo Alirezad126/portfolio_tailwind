@@ -20,7 +20,7 @@ function App() {
       <section id="Parallax">
         <Parallax />
       </section>
-      <section className="min-h-[100vh] h-[150vh]" id="About">
+      <section className="min-h-[100vh] h-[180vh] bg-gradient-to-b" id="About">
         <About />
       </section>
       <section className="flex sm:hidden min-h-[100vh] h-[120vh]" id="Skills">

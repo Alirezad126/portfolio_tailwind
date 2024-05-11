@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { TbPoint } from "react-icons/tb";
 import axios from "axios";
 import { AiOutlineGithub } from "react-icons/ai";
+import "./carousel.scss";
+
 function ProjectOneMobile() {
   function base64ToBlob(base64) {
     base64 = base64.replace(/\s/g, "");
@@ -26,11 +28,25 @@ function ProjectOneMobile() {
       "https://github.com/Alirezad126/PySnake/blob/main/results/score_61.gif?raw=true",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in ex vitae sapien bibendum tristique. Suspendisse lacinia, nunc eu iaculis mollis, tellus arcu tristique lectus, non tempus tellus turpis vel enim ",
   };
-  const [currentIndex, setCurrentIndex] = useState(0);
   const [imageURL, setImageUrl] = useState(null);
   const [imageURLLoading, setimageURLLoading] = useState(false);
   const [x, setX] = useState(10);
   const [y, setY] = useState(10);
+  const carouselRef = useRef(null);
+
+  const scrollToNext = () => {
+    if (carouselRef.current) {
+      const scrollWidth = carouselRef.current.scrollWidth / texts.length;
+      carouselRef.current.scrollBy({ left: scrollWidth, behavior: "smooth" });
+    }
+  };
+
+  const scrollToPrevious = () => {
+    if (carouselRef.current) {
+      const scrollWidth = carouselRef.current.scrollWidth / texts.length;
+      carouselRef.current.scrollBy({ left: -scrollWidth, behavior: "smooth" });
+    }
+  };
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -69,10 +85,10 @@ function ProjectOneMobile() {
     }
   };
 
-  const slides = [
+  const texts = [
     {
       text: (
-        <div>
+        <div className="text-[1.7vh]  w-4/5 m-auto">
           <p className="font-extrabold text-[2.1vh]">Description</p>
           <p className="font-light text-gray-400">
             This project integrates a Pygame-based interface with a
@@ -90,7 +106,7 @@ function ProjectOneMobile() {
 
     {
       text: (
-        <div>
+        <div className="text-[1.7vh]  w-4/5 m-auto">
           <p className="font-extrabold text-[2.1vh]">Game Mechanics</p>
           <p className="font-light text-gray-400">
             {" "}
@@ -121,7 +137,7 @@ function ProjectOneMobile() {
     },
     {
       text: (
-        <div>
+        <div className="text-[1.7vh]  w-4/5 m-auto">
           <p className="font-extrabold text-[2.1vh]">Objectives and Rewards</p>
           <p className="font-light text-gray-400">
             {" "}
@@ -143,122 +159,119 @@ function ProjectOneMobile() {
       ),
     },
     {
-      divs: (
-        <div className="flex flex-col gap-3 h-3/4 w-full p-[30px] justify-center items-center">
-          {imageURL !== null || (
-            <div className="text-center w-full flex flex-col gap-2">
-              <h1 className="text-white font-bold text-[3vh]">Try it Online</h1>
-              <p className="text-[1.6vh] text-start">
-                Enter X and Y axis cell numbers for processing. The model, on
-                AWS Lambda's serverless platform, will play the game and display
-                the GIF response (Coool right ?!). <br />{" "}
-                <p className="font-bold">
-                  {" "}
-                  Note: Exceeding about 20 cells may lead to prolonged
-                  processing, risking API timeout.(AWL Lambda is serverless and
-                  the code execution might take a bit longer)
+      text: (
+        <div className="flex m-auto  duration-400">
+          <div className="flex flex-col gap-3  p-[10px] justify-center items-center">
+            {imageURL !== null || (
+              <div className="text-center w-full flex flex-col gap-2">
+                <h1 className="text-white font-bold text-[3vh]">
+                  Try it Online
+                </h1>
+                <p className="text-[1.6vh] text-start">
+                  Enter X and Y axis cell numbers for processing. The model, on
+                  AWS Lambda's serverless platform, will play the game and
+                  display the GIF response (Coool right ?!). <br />{" "}
+                  <p className="font-bold">
+                    {" "}
+                    Note: Exceeding about 20 cells may lead to prolonged
+                    processing, risking API timeout.(AWL Lambda is serverless
+                    and the code execution might take a bit longer)
+                  </p>
                 </p>
-              </p>
-              <form className="flex flex-1 flex-col gap-[2vh] items-center">
-                <input
-                  className="p-[5px] w-3/4 text-center lg:p-[10px] bg-transparent border-white border-[1px] rounded-2xl text-white"
-                  type="number"
-                  min={5}
-                  max={40}
-                  required
-                  placeholder="Enter the X-Axis number of cells"
-                  value={x}
-                  onChange={handleInputChange}
-                  name="x"
-                />
-                <input
-                  className="p-[5px] w-3/4  text-center lg:p-[10px] bg-transparent border-white border-[1px] rounded-2xl text-white"
-                  type="number"
-                  min={5}
-                  max={40}
-                  required
-                  placeholder="Enter the Y-Axis number of cells"
-                  value={y}
-                  onChange={handleInputChange}
-                  name="y"
-                />
-                {imageURLLoading || (
-                  <button
-                    onClick={fetchImage}
-                    className="text-sm text-white p-[8px] lg:p-[20px] border-none bg-orange-500 hover:bg-orange-400 cursor-pointer font-semibold shadow rounded-md transition ease-in-out duration-150"
-                  >
-                    Send Request
-                  </button>
-                )}
-                {imageURLLoading && (
-                  <button
-                    type="button"
-                    class="inline-flex justify-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md text-white bg-orange-500 hover:bg-orange-400 transition ease-in-out duration-150 cursor-not-allowed"
-                    disabled=""
-                  >
-                    <svg
-                      class="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
+                <form className="flex flex-1 flex-col gap-[2vh] items-center">
+                  <input
+                    className="p-[5px] w-3/4 h-[25px] text-center lg:p-[10px] bg-transparent border-white border-[1px] rounded-2xl text-[13px] text-white"
+                    type="number"
+                    min={5}
+                    max={40}
+                    required
+                    placeholder="Enter the X-Axis number of cells"
+                    value={x}
+                    onChange={handleInputChange}
+                    name="x"
+                  />
+                  <input
+                    className="p-[5px] w-3/4  text-center lg:p-[10px] bg-transparent border-white border-[1px] rounded-2xl text-[13px] text-white"
+                    type="number"
+                    min={5}
+                    max={40}
+                    required
+                    placeholder="Enter the Y-Axis number of cells"
+                    value={y}
+                    onChange={handleInputChange}
+                    name="y"
+                  />
+                  {imageURLLoading || (
+                    <button
+                      onClick={fetchImage}
+                      className="text-sm text-white p-[8px] lg:p-[20px] border-none bg-orange-500 hover:bg-orange-400 cursor-pointer font-semibold shadow rounded-md transition ease-in-out duration-150"
                     >
-                      <circle
-                        class="opacity-25"
-                        cx="12"
-                        cy="12"
-                        r="10"
-                        stroke="currentColor"
-                        stroke-width="4"
-                      ></circle>
-                      <path
-                        class="opacity-75"
-                        fill="currentColor"
-                        d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                      ></path>
-                    </svg>
-                    Processing...
-                  </button>
-                )}
-              </form>
-            </div>
-          )}
-          {imageURL && (
-            <div className="flex flex-col flex-1 max-w-[300px] items-center gap-10 ">
-              <img
-                className="w-[120%] rounded-xl object-fit "
-                src={imageURL}
-                alt=""
-              />
+                      Send Request
+                    </button>
+                  )}
+                  {imageURLLoading && (
+                    <button
+                      type="button"
+                      class="inline-flex justify-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md text-white bg-orange-500 hover:bg-orange-400 transition ease-in-out duration-150 cursor-not-allowed"
+                      disabled=""
+                    >
+                      <svg
+                        class="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                      >
+                        <circle
+                          class="opacity-25"
+                          cx="12"
+                          cy="12"
+                          r="10"
+                          stroke="currentColor"
+                          stroke-width="4"
+                        ></circle>
+                        <path
+                          class="opacity-75"
+                          fill="currentColor"
+                          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                        ></path>
+                      </svg>
+                      Processing...
+                    </button>
+                  )}
+                </form>
+              </div>
+            )}
+            {imageURL && (
+              <div className="flex flex-col flex-1 max-w-[300px] items-center gap-10 ">
+                <img
+                  className="w-[120%] rounded-xl object-fit "
+                  src={imageURL}
+                  alt=""
+                />
 
-              <button
-                onClick={() => {
-                  setImageUrl(null);
-                }}
-                className="text-xl text-white p-[2vh] lg:p-[20px] border-none bg-indigo-500 hover:bg-indigo-400 cursor-pointer font-semibold shadow rounded-md transition ease-in-out duration-150"
-              >
-                Try again?
-              </button>
-            </div>
-          )}
+                <button
+                  onClick={() => {
+                    setImageUrl(null);
+                  }}
+                  className="text-xl text-white p-[2vh] lg:p-[20px] border-none bg-indigo-500 hover:bg-indigo-400 cursor-pointer font-semibold shadow rounded-md transition ease-in-out duration-150"
+                >
+                  Try again?
+                </button>
+              </div>
+            )}
+          </div>
         </div>
       ),
     },
   ];
 
-  const prevSlide = () => {
-    const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
-    setCurrentIndex(newIndex);
-  };
-  const nextSlide = () => {
-    const isLastSlide = currentIndex === slides.length - 1;
-    const newIndex = isLastSlide ? 0 : currentIndex + 1;
-    setCurrentIndex(newIndex);
-  };
+  const Slides = texts.map((slide) => {
+    return <div className="text-[1vw]">{slide.text}</div>;
+  });
 
   return (
     <section className="relative">
-      <div className="flex flex-col justify-center text-center items-center m-auto w-4/5 h-3/7 pt-[100px]">
+      <div className="flex flex-col justify-center text-center items-center m-auto w-4/5  pt-[100px]">
         <img
           className="h-full w-3/5 md:w-1/2 m-auto rounded-xl object-fit "
           src={item.img}
@@ -278,17 +291,15 @@ function ProjectOneMobile() {
           </h1>
         </div>
       </div>
-      <div className="w-4/5 h-2/3 m-auto py-5  relative overflow-hidden">
-        <div className="text-[1.7vh]  w-4/5 m-auto">
-          {slides[currentIndex].text}
-        </div>
-        <div className="flex m-auto w-full h-full duration-400 justify-center ">
-          {slides[currentIndex].divs}
-        </div>
+      <div className="w-4/5 m-auto mt-3 py-5  relative border border-gray-500 rounded-3xl ">
+      <div className="carousel" ref={carouselRef}>
+        {Slides}
+      </div>
+
         {/* Left Arrow */}
         <div
-          onClick={prevSlide}
-          className="absolute top-[50%] -translate-x-0 translate-y-[-50%] right-[0px]text-2xl rounded-full p-2 bg-white/20 text-white cursor-pointer"
+          onClick={scrollToPrevious}
+          className="absolute top-[50%] -translate-x-0 translate-y-[-50%] left-[-20px] text-2xl rounded-full p-2 bg-white/20 text-white cursor-pointer"
         >
           <div className="hidden md:block z-50">
             <BsChevronCompactLeft size={30} />
@@ -300,8 +311,8 @@ function ProjectOneMobile() {
         </div>
         {/* Rigth Arrow */}
         <div
-          onClick={nextSlide}
-          className="absolute top-[50%] -translate-x-0 translate-y-[-50%] right-[0px] text-2xl rounded-full p-2 bg-white/20 text-white cursor-pointer"
+          onClick={scrollToNext}
+          className="absolute top-[50%] -translate-x-0 translate-y-[-50%] right-[-20px] text-2xl rounded-full p-2 bg-white/20 text-white cursor-pointer"
         >
           <div className="hidden md:block z-50">
             <BsChevronCompactRight size={30} />
