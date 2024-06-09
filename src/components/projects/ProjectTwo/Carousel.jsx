@@ -167,7 +167,7 @@ function Carousel() {
   });
   
   return (
-    <div className="w-full h-full m-auto py-5 px-5 relative border border-gray-500 rounded-3xl">
+    <div className="w-full h-full m-auto py-5 px-5 relative rounded-3xl">
       <div
         onClick={scrollToPrevious}
         className="absolute top-[50%] -translate-x-0 translate-y-[-50%] left-[-50px] text-2xl rounded-full p-2 bg-white/20 text-white cursor-pointer"

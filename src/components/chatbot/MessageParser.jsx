@@ -9,7 +9,7 @@ class MessageParser {
   }
 
   async sendToAPI(messageText, state) {
-    const response = await fetch('https://ragbotdanesh.online/chat', {
+    const response = await fetch('https://api.ragbotdanesh.online/chat', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

@@ -49,14 +49,17 @@ const About = () => {
           >
             About Me
           </h1>
+
         </motion.div>
 
         <div
           href="#"
           class="block p-6 m-5 sm:p-6 sm:m-0 w-fu border border-gray-500 rounded-lg shadow "
         >
-          <h5 class="mb-2 text-[2.3vh]
-              lg:text-[1.5rem] 2xl:text-[2rem] text-center font-bold tracking-tight text-white dark:text-white">
+          <h5
+            class="mb-2 text-[2.3vh]
+              lg:text-[1.5rem] 2xl:text-[2rem] text-center font-bold tracking-tight text-white dark:text-white"
+          >
             Hi there! 👋 I’m Alireza:
           </h5>
           <p class="text-justify text-[1.8vh] md:text-[0.9rem] lg:text-[1rem] 2xl:text-[1.5rem] font-normal text-white ">
@@ -81,13 +84,13 @@ const About = () => {
           // whileInView="animate"
           className="flex flex-col
           gap-[1vh]
-          lg:flex-row lg:justify-around lg:gap-[10px] lg:m-0 z-10 rounded-2xl lg:border-[1px] lg:h-1/2 border-gray-500 "
+          lg:flex-col lg:justify-around lg:gap-[10px] lg:m-0 z-10 rounded-2xl lg:border-[1px] lg:h-1/2 border-gray-500 "
         >
           <div
             className="flex flex-col p-2
             gap-[2vh]
           md:gap-[10px] md:p-[10px] w-full 
-          lg:w-1/2 lg:gap-[20px] lg:p-[30px]"
+           lg:gap-[20px] lg:p-[30px]"
           >
             <h1
               className="items-center text-[2.3vh]  
@@ -152,7 +155,7 @@ const About = () => {
             className="flex flex-col p-2
             gap-[2vh]
           md:gap-[10px] md:p-[10px] w-full 
-          lg:w-1/2 lg:gap-[20px] lg:p-[30px]"
+           lg:gap-[20px] lg:p-[30px]"
           >
             <h1
               className="items-center text-[2.3vh]
@@ -170,7 +173,7 @@ const About = () => {
                 alt="Concordia University"
                 className="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] 2xl:w-[70px] 2xl:h-[70px]"
               />
-              <div className="flex flex-col w-[65%]">
+              <div className="flex flex-col w-[70%]">
                 <h2 className="text-[1.8vh] md:text-[0.9rem] lg:text-[1rem] 2xl:text-[1.5rem]">
                   <b>Machine Learning Researcher</b>
                 </h2>
@@ -197,7 +200,7 @@ const About = () => {
                 alt="IranBar icon"
                 className="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] 2xl:w-[70px] 2xl:h-[70px]"
               />
-              <div className="flex flex-col w-[65%]">
+              <div className="flex flex-col w-[70%]">
                 <h2 className="text-[1.8vh] md:text-[0.9rem] lg:text-[1rem] 2xl:text-[1.5rem]">
                   <b>Junior Data Scientist</b>
                 </h2>
